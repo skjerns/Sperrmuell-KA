@@ -16,25 +16,28 @@ INDEX_TEMPLATE = r"""
 </html>
 """
 
-EXCLUDED = ['index.html']
-
+EXCLUDED = ['index.html', '.git']
+import ospath
 import os
-import argparse
 
 # May need to do "pip install mako"
 from mako.template import Template
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("directory")
-    parser.add_argument("--header")
-    args = parser.parse_args()
-    fnames = [fname for fname in sorted(os.listdir(args.directory))
-              if fname not in EXCLUDED]
-    header = (args.header if args.header else os.path.basename(args.directory))
-    print(Template(INDEX_TEMPLATE).render(names=fnames, header=header))
+def main(root):
+    folders = ospath.list_folders(root, subfolders=True, add_parent=True)
+    for folder in folders:
+        if folder=='.git': continue
+        html = index(folder)
+        with open(folder + '/index.html', 'w') as f:
+            f.write(html)
 
+def index(folder):
+
+    fnames = [fname for fname in sorted(folder)   if fname not in EXCLUDED]
+    header = os.path.basename(folder)
+    html = Template(INDEX_TEMPLATE).render(names=fnames, header=header)
+    return html
 
 if __name__ == '__main__':
-    main()
+    main('.')
