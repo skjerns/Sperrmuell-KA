@@ -34,7 +34,9 @@ def main(root):
             f.write(html)
 
 def index(folder):
-    files = ospath.list_files(folder, relative=True)
+    folders  = ospath.list_folders(folder)
+    folders = [f for f in folders if not '.git' in f]
+    files = folders + ospath.list_files(folder, relative=True)
     fnames = [fname for fname in sorted(files) if fname not in EXCLUDED]
     header = os.path.basename(folder)
     html = Template(INDEX_TEMPLATE).render(names=fnames, header=header)
