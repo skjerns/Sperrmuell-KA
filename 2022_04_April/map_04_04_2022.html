@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_969ffa66556448a694abff37d51ac9a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_969ffa66556448a694abff37d51ac9a9" ></div>
+        
+</body>
+<script>    
+    
+            var map_969ffa66556448a694abff37d51ac9a9 = L.map(
+                "map_969ffa66556448a694abff37d51ac9a9",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_47a412e233d54a389f2da8ae8d51f1b6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_969ffa66556448a694abff37d51ac9a9);
+        
+    
+            var marker_d9fe57de71a34dfea966e887fe863d09 = L.marker(
+                [49.0053685, 8.3858214],
+                {}
+            ).addTo(map_969ffa66556448a694abff37d51ac9a9);
+        
+    
+        var popup_ebf93b52a0834143b0ad7eeda4e9146b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a14d918b3394ed8b1ab3d9c795c0c0c = $(`<div id="html_9a14d918b3394ed8b1ab3d9c795c0c0c" style="width: 100.0%; height: 100.0%;">KRIEGSSTRASSE</div>`)[0];
+            popup_ebf93b52a0834143b0ad7eeda4e9146b.setContent(html_9a14d918b3394ed8b1ab3d9c795c0c0c);
+        
+
+        marker_d9fe57de71a34dfea966e887fe863d09.bindPopup(popup_ebf93b52a0834143b0ad7eeda4e9146b)
+        ;
+
+        
+    
+    
+            marker_d9fe57de71a34dfea966e887fe863d09.bindTooltip(
+                `<div>
+                     KRIEGSSTRASSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a056d784e13047f08a7164f3a6cb010a = L.marker(
+                [49.0051329, 8.4152145],
+                {}
+            ).addTo(map_969ffa66556448a694abff37d51ac9a9);
+        
+    
+        var popup_ba641e4e409c4e3a945101698b0bf9a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fea97202ea9f4edc96969a012af79b95 = $(`<div id="html_fea97202ea9f4edc96969a012af79b95" style="width: 100.0%; height: 100.0%;">LUDWIG-ERHARD-ALLEE</div>`)[0];
+            popup_ba641e4e409c4e3a945101698b0bf9a8.setContent(html_fea97202ea9f4edc96969a012af79b95);
+        
+
+        marker_a056d784e13047f08a7164f3a6cb010a.bindPopup(popup_ba641e4e409c4e3a945101698b0bf9a8)
+        ;
+
+        
+    
+    
+            marker_a056d784e13047f08a7164f3a6cb010a.bindTooltip(
+                `<div>
+                     LUDWIG-ERHARD-ALLEE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

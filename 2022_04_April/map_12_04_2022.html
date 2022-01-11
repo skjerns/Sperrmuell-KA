@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f197a9812044055974f46e6ce51d968 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8f197a9812044055974f46e6ce51d968" ></div>
+        
+</body>
+<script>    
+    
+            var map_8f197a9812044055974f46e6ce51d968 = L.map(
+                "map_8f197a9812044055974f46e6ce51d968",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_efc5d3be0b7c48e49b711cce0f12d312 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8f197a9812044055974f46e6ce51d968);
+        
+    
+            var marker_abfbc4401df2495093365467d680ef6a = L.marker(
+                [48.9965877, 8.4112577],
+                {}
+            ).addTo(map_8f197a9812044055974f46e6ce51d968);
+        
+    
+        var popup_3245a8873a7944b69dff92649b036f1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad14e9f7936b48bbb09a895b2d76848f = $(`<div id="html_ad14e9f7936b48bbb09a895b2d76848f" style="width: 100.0%; height: 100.0%;">MITTELBRUCHSTRASSE</div>`)[0];
+            popup_3245a8873a7944b69dff92649b036f1d.setContent(html_ad14e9f7936b48bbb09a895b2d76848f);
+        
+
+        marker_abfbc4401df2495093365467d680ef6a.bindPopup(popup_3245a8873a7944b69dff92649b036f1d)
+        ;
+
+        
+    
+    
+            marker_abfbc4401df2495093365467d680ef6a.bindTooltip(
+                `<div>
+                     MITTELBRUCHSTRASSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fbc7ccabb7b4a0fa2243f6b371cee06 = L.marker(
+                [49.0041946, 8.4105815],
+                {}
+            ).addTo(map_8f197a9812044055974f46e6ce51d968);
+        
+    
+        var popup_a45097919aa0463a92520f2316a7b3dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1626bde41d94b3ab9e1ca51dc365757 = $(`<div id="html_e1626bde41d94b3ab9e1ca51dc365757" style="width: 100.0%; height: 100.0%;">RÜPPURRER STRASSE</div>`)[0];
+            popup_a45097919aa0463a92520f2316a7b3dd.setContent(html_e1626bde41d94b3ab9e1ca51dc365757);
+        
+
+        marker_3fbc7ccabb7b4a0fa2243f6b371cee06.bindPopup(popup_a45097919aa0463a92520f2316a7b3dd)
+        ;
+
+        
+    
+    
+            marker_3fbc7ccabb7b4a0fa2243f6b371cee06.bindTooltip(
+                `<div>
+                     RÜPPURRER STRASSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a59e32b915e45c1bf86af810c8dd26b = L.marker(
+                [49.0020246, 8.4237083],
+                {}
+            ).addTo(map_8f197a9812044055974f46e6ce51d968);
+        
+    
+        var popup_ec7cd2cf2ffa49e4a00e4bc466c7974a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee5aeb12d05d48859f0a1f6f0e683943 = $(`<div id="html_ee5aeb12d05d48859f0a1f6f0e683943" style="width: 100.0%; height: 100.0%;">STUTTGARTER STRASSE</div>`)[0];
+            popup_ec7cd2cf2ffa49e4a00e4bc466c7974a.setContent(html_ee5aeb12d05d48859f0a1f6f0e683943);
+        
+
+        marker_7a59e32b915e45c1bf86af810c8dd26b.bindPopup(popup_ec7cd2cf2ffa49e4a00e4bc466c7974a)
+        ;
+
+        
+    
+    
+            marker_7a59e32b915e45c1bf86af810c8dd26b.bindTooltip(
+                `<div>
+                     STUTTGARTER STRASSE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ce2a4af2396403fa32414a9eabce1c5 = L.marker(
+                [48.9961337, 8.4100904],
+                {}
+            ).addTo(map_8f197a9812044055974f46e6ce51d968);
+        
+    
+        var popup_e953e44bd9464240971cbb95a4ed6dfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d37a07dd895c4314a1ef68212517ad5f = $(`<div id="html_d37a07dd895c4314a1ef68212517ad5f" style="width: 100.0%; height: 100.0%;">TIVOLIPLATZ</div>`)[0];
+            popup_e953e44bd9464240971cbb95a4ed6dfb.setContent(html_d37a07dd895c4314a1ef68212517ad5f);
+        
+
+        marker_1ce2a4af2396403fa32414a9eabce1c5.bindPopup(popup_e953e44bd9464240971cbb95a4ed6dfb)
+        ;
+
+        
+    
+    
+            marker_1ce2a4af2396403fa32414a9eabce1c5.bindTooltip(
+                `<div>
+                     TIVOLIPLATZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
