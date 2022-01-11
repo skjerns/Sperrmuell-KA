@@ -8,6 +8,8 @@ INDEX_TEMPLATE = r"""
 <body>
 <h2>${header}</h2>
 <p>
+<li><a href="..">[parent directory]</a></li>
+<br>
 % for name in names:
     <li><a href="${name}">${name}</a></li>
 % endfor
