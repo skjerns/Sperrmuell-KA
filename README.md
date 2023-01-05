@@ -1,6 +1,7 @@
-# Sperrmuell-KA
+# Sperrmüll-Lageplan Karlsruhe
+### nach Tagen sortiert
 
-Sperrmüll Lageplan der Stadt Karlsruhe nach Datum sortiert. Mit diesem Tool könnt ihr sehen an welchen Tagen wo in Karlsruhe Sperrmüll ist. Es gibt eine interaktive Karte, oder statische Karten nach Tag sortiert. Lasst mich gerne wissen, wenn es mal wieder ein neues Jahr ist und ich vergessen habe das Tool zu updaten.
+Sperrmüll-Kalender der Stadt Karlsruhe nach Datum sortiert. Mit diesem Tool könnt ihr sehen an welchen Tagen wo in Karlsruhe Sperrmüll ist. Es gibt eine interaktive Karte, oder statische Karten nach Tag sortiert. Lasst mich gerne wissen, wenn es mal wieder ein neues Jahr ist und ich vergessen habe das Tool zu updaten.
 
 Ihr könnt den Plan hier sehen: https://skjerns.github.io/Sperrmuell-KA/
 
