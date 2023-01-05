@@ -19,7 +19,7 @@ from datetime import datetime
 from joblib.memory import Memory
 from commons import get_street_coords
 
-countries = gpd.read_file('C:/Users/Simon/Desktop/sampledata/99bfd9e7-bb42-4728-87b5-07f8c8ac631c2020328-1-1vef4ev.lu5nk.shp')
+#countries = gpd.read_file('C:/Users/Simon/Desktop/sampledata/99bfd9e7-bb42-4728-87b5-07f8c8ac631c2020328-1-1vef4ev.lu5nk.shp')
 mem = Memory('.')
 
 def circle(x, y, r=0.001):
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     
         
     g = TimeSliderChoropleth(
-        name='Sperrmüllkarte Karlsruhe 2022',
+        name='Sperrmüllkarte Karlsruhe 2023',
         data=data,
         styledict=styledict,
     ).add_to(m)
@@ -114,7 +114,7 @@ with open(html_file, 'r') as f:
     html = f.read()
 
 html = html.replace('<div class="folium-map"', 
-                    '''<b>Sperrmüllkarte Karlsruhe 2022</b><br>
+                    '''<b>Sperrmüllkarte Karlsruhe 2023</b><br>
                     Verschiebe den Regler auf das gewünschte Datum. Sperrmüllregion wird rot eingezeichnet
                     
                     <div class="folium-map"''')

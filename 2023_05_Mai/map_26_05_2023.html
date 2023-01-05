@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e8ae308a3eceb430021d2bbcc389613b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e8ae308a3eceb430021d2bbcc389613b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e8ae308a3eceb430021d2bbcc389613b = L.map(
+                "map_e8ae308a3eceb430021d2bbcc389613b",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2bde6474ae356c8d0aa406f311fd750f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e8ae308a3eceb430021d2bbcc389613b);
+        
+    
+            var marker_44775da39930ce3a83c2212061ad2a66 = L.marker(
+                [48.9952018, 8.3910845],
+                {}
+            ).addTo(map_e8ae308a3eceb430021d2bbcc389613b);
+        
+    
+        var popup_0206645af354f62932966c1bd34ca90b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6a6d3ad6d4b7a1285b53f29a8f3d51f = $(`<div id="html_f6a6d3ad6d4b7a1285b53f29a8f3d51f" style="width: 100.0%; height: 100.0%;">Barbarossaplatz</div>`)[0];
+                popup_0206645af354f62932966c1bd34ca90b.setContent(html_f6a6d3ad6d4b7a1285b53f29a8f3d51f);
+            
+        
+
+        marker_44775da39930ce3a83c2212061ad2a66.bindPopup(popup_0206645af354f62932966c1bd34ca90b)
+        ;
+
+        
+    
+    
+            marker_44775da39930ce3a83c2212061ad2a66.bindTooltip(
+                `<div>
+                     Barbarossaplatz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1a473505030d059ad8823985e061189 = L.marker(
+                [49.0105665, 8.3918301],
+                {}
+            ).addTo(map_e8ae308a3eceb430021d2bbcc389613b);
+        
+    
+        var popup_8b9101289205ff77a62b9fc3a3570a66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4f4753b7c340b7767e096f36bee9a5f = $(`<div id="html_b4f4753b7c340b7767e096f36bee9a5f" style="width: 100.0%; height: 100.0%;">Hirschhof</div>`)[0];
+                popup_8b9101289205ff77a62b9fc3a3570a66.setContent(html_b4f4753b7c340b7767e096f36bee9a5f);
+            
+        
+
+        marker_c1a473505030d059ad8823985e061189.bindPopup(popup_8b9101289205ff77a62b9fc3a3570a66)
+        ;
+
+        
+    
+    
+            marker_c1a473505030d059ad8823985e061189.bindTooltip(
+                `<div>
+                     Hirschhof
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c767284e7787bd7f8a1e98e517ec6a27 = L.marker(
+                [48.9950798, 8.390207],
+                {}
+            ).addTo(map_e8ae308a3eceb430021d2bbcc389613b);
+        
+    
+        var popup_5d01307c9a4770e67d6ff44f6e11b2cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b18aee6cc49b73ee4f825000cec0780e = $(`<div id="html_b18aee6cc49b73ee4f825000cec0780e" style="width: 100.0%; height: 100.0%;">HirschstraSSe</div>`)[0];
+                popup_5d01307c9a4770e67d6ff44f6e11b2cf.setContent(html_b18aee6cc49b73ee4f825000cec0780e);
+            
+        
+
+        marker_c767284e7787bd7f8a1e98e517ec6a27.bindPopup(popup_5d01307c9a4770e67d6ff44f6e11b2cf)
+        ;
+
+        
+    
+    
+            marker_c767284e7787bd7f8a1e98e517ec6a27.bindTooltip(
+                `<div>
+                     HirschstraSSe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

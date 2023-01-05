@@ -15,6 +15,7 @@ mem = Memory('.')
 
 @mem.cache
 def get_street_coords(street):
+    street = street.upper()
     max(tqdm._instances).set_description(f'getting coords for {street}')
     streets_json = 'street_coords.json'
     coords = {}

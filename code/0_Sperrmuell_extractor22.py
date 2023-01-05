@@ -23,9 +23,12 @@ if __name__ == '__main__':
 
     # this url contains all street names in karlsruhe
     streets_url = f'{akal_php}?von=A&bis=['
-    response = urllib.request.urlopen(streets_url)
+    response = urllib.request.urlopen(streets_url).read().decode()
     soup = BeautifulSoup(response)
-    streets = [opt.text.strip() for opt in soup.findAll('option')]
+    scripttags = [opt.text.strip() for opt in soup.findAll('script')]
+    streets = response.split('strassenliste = ')[1].split(';')[0].replace(',]', ']')
+    streets = streets.replace("'", '"')
+    streets = json.loads(streets)
     assert len(streets)>1800, 'should be around 1800 streets or more in KA'
         
     #streetlist = [i.replace(" ", "%20") for i in streetlist]

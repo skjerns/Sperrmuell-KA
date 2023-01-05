@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0910c1f6762faf705ec19ac30739a4bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0910c1f6762faf705ec19ac30739a4bf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0910c1f6762faf705ec19ac30739a4bf = L.map(
+                "map_0910c1f6762faf705ec19ac30739a4bf",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a6ea10ed33d12409ec9d564ad86b25a2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0910c1f6762faf705ec19ac30739a4bf);
+        
+    
+            var marker_9b5a102ebcbb5b3ff6126d7cb8c9d7c2 = L.marker(
+                [49.0086345, 8.419324],
+                {}
+            ).addTo(map_0910c1f6762faf705ec19ac30739a4bf);
+        
+    
+        var popup_d15619304504aa3a6b4201d591dabb4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f918cba6fcb3599cb23a1aa992305e8 = $(`<div id="html_6f918cba6fcb3599cb23a1aa992305e8" style="width: 100.0%; height: 100.0%;">Durlacher Allee</div>`)[0];
+                popup_d15619304504aa3a6b4201d591dabb4c.setContent(html_6f918cba6fcb3599cb23a1aa992305e8);
+            
+        
+
+        marker_9b5a102ebcbb5b3ff6126d7cb8c9d7c2.bindPopup(popup_d15619304504aa3a6b4201d591dabb4c)
+        ;
+
+        
+    
+    
+            marker_9b5a102ebcbb5b3ff6126d7cb8c9d7c2.bindTooltip(
+                `<div>
+                     Durlacher Allee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e972cff3c14e75b94e705cc9e0848338 = L.marker(
+                [49.0086345, 8.419324],
+                {}
+            ).addTo(map_0910c1f6762faf705ec19ac30739a4bf);
+        
+    
+        var popup_63908d5b49969213941606a874e46e4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b04686b4d93b252f0f28ae8d75f1681d = $(`<div id="html_b04686b4d93b252f0f28ae8d75f1681d" style="width: 100.0%; height: 100.0%;">Durlacher Allee</div>`)[0];
+                popup_63908d5b49969213941606a874e46e4a.setContent(html_b04686b4d93b252f0f28ae8d75f1681d);
+            
+        
+
+        marker_e972cff3c14e75b94e705cc9e0848338.bindPopup(popup_63908d5b49969213941606a874e46e4a)
+        ;
+
+        
+    
+    
+            marker_e972cff3c14e75b94e705cc9e0848338.bindTooltip(
+                `<div>
+                     Durlacher Allee
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8d2a64e010ad9be321d6b3953017c4d = L.marker(
+                [49.0061184, 8.4418048],
+                {}
+            ).addTo(map_0910c1f6762faf705ec19ac30739a4bf);
+        
+    
+        var popup_c2c2047f4e5da7a622323fc51680d898 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05b26dda2b55955d64b1507dda290eec = $(`<div id="html_05b26dda2b55955d64b1507dda290eec" style="width: 100.0%; height: 100.0%;">GerwigstraSSe</div>`)[0];
+                popup_c2c2047f4e5da7a622323fc51680d898.setContent(html_05b26dda2b55955d64b1507dda290eec);
+            
+        
+
+        marker_c8d2a64e010ad9be321d6b3953017c4d.bindPopup(popup_c2c2047f4e5da7a622323fc51680d898)
+        ;
+
+        
+    
+    
+            marker_c8d2a64e010ad9be321d6b3953017c4d.bindTooltip(
+                `<div>
+                     GerwigstraSSe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

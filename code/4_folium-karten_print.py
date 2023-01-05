@@ -13,7 +13,7 @@ from selenium import webdriver
 import re
 import os
 from tqdm import tqdm
-path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2022/"
+path="./"
 os.chdir(path)
 from commons import get_street_coords
 
