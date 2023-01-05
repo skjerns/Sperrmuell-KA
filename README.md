@@ -5,7 +5,7 @@ Sperrmüll-Kalender der Stadt Karlsruhe nach Datum sortiert. Mit diesem Tool kö
 
 Ihr könnt den Plan hier sehen: https://skjerns.github.io/Sperrmuell-KA/
 
-![image](https://user-images.githubusercontent.com/14980558/210863785-2fb7a0ef-f044-4e5d-8c7a-5f0e19d4d34b.png)
+[![image](https://user-images.githubusercontent.com/14980558/210863785-2fb7a0ef-f044-4e5d-8c7a-5f0e19d4d34b.png)](https://skjerns.github.io/Sperrmuell-KA/interactive_map.html)
 
 
 Adapted from "J.Schmidt: Sperrmüll nach Tagen in Karlsruhe"
