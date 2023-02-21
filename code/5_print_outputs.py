@@ -7,19 +7,18 @@ Created on Wed Dec 18 21:15:20 2019
 import json
 from PIL import Image
 from PIL import ImageDraw, ImageFont
-# import qrcode # den lassen wir ab 2022 weg.
+
 import calendar
-import pandas as pd
 import re
 import os
 import textwrap
-path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2022/"
+path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2023/"
 os.chdir(path)
 from commons import multiple_replace
 path_maps = path + "png_html/"
-path_out = path + "output_print/"
+path_out = path + "print/"
 
-jahr = 2022
+jahr = 2023
 
 # Daten, an denen Sperrmüll stattfindet
 with open('sperrmuellkalender.json', 'r') as f:
@@ -35,10 +34,13 @@ for date in list(liste):
         months[month] = [date]
 
 fancy_fonts = ["Bemydor","Autumn Moon - TTF","Alyfe Demo",
-               "StripesCaps","Today__","Malache Crunch",
+               "StripesCaps","Today_","Bemydor",
                "CoventryGardenNF","BigLou","UndergroundNF",
                "ExtraOrnamentalNo2","Beyond Wonderland","Mugnuts"]#,"nauvo__",
-
+# old fancy_fonts = ["Bemydor","Autumn Moon - TTF","Alyfe Demo",
+#                "StripesCaps","Today__","Malache Crunch",
+#                "CoventryGardenNF","BigLou","UndergroundNF",
+#                "ExtraOrnamentalNo2","Beyond Wonderland","Mugnuts"]
 fancy_fonts_mono = "IckyTicketMono,Kingthings Trypewriter 2,Vanthian Ragnarok,Beccaria,Harting Plain,software_tester,Kingthings Trypewriter 2,Harting Plain,IckyTicketMono,Kingthings Trypewriter 2,Vanthian Ragnarok,Beccaria".split(",")
 #fancy_fonts_mono = "IckyTicketMono,Kingthings Trypewriter 2,Vanthian Ragnarok,Beccaria,Harting Plain,EXITFONTFORAFILM,software_tester,hydrogen,Harting Plain,IckyTicketMono,Kingthings Trypewriter 2,EXITFONTFORAFILM".split(",")
 monatsnamen = ['Januar','Februar','Maerz','April','Mai','Juni',
@@ -49,7 +51,9 @@ fcol = (0, 0, 180) # Schriftfarbe
 #Kalendersprüche für die Ecke unten rechts (QR Code im vorherigen Design)
 with open('Kalenderspruch.txt', 'r') as f:
     sprueche = f.read().splitlines() # besser als readlines, weil hier kein \n bleibt.
-replacements = {"Ã¼":"ü", "Ã¶":"ö", "Ã¤":"ä"}
+replacements = {"Ã¼":"ü", "Ã¶":"ö", "Ã¤":"ä", "Ã–":"Ö", "ÃŸ":"ß", "Ã„":"Ä"}
+sprueche = [multiple_replace(replacements, sprueche[i]) for i in range(12)]
+
 spruchfont = ImageFont.truetype("C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts_mono[8]+".ttf",36)
 
 
@@ -64,19 +68,17 @@ for i in range(12):
     #d.text((10,10), "Hello World", fill=(255,255,0))
     
     #Überschrift
-    #fnt = ImageFont.truetype("C:/Windows/Fonts/"+fancy_fonts[i]+".ttf",100)
     fntp="C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts[i]+".ttf"
     fnt = ImageFont.truetype(fntp,50)
     d = ImageDraw.Draw(background)
     d.text((70,5), "Sperrmuell im", font=fnt, fill=fcol)
     fnt = ImageFont.truetype(fntp,100)
     d.text((200,50), monat, font=fnt, fill=fcol)
-    #d.text((100,1000),"1234567891011",font=fnt, fill=(0, 0, 180))
  
     # Kalender
     fnt = ImageFont.truetype("C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts_mono[i]+".ttf",60)
     cal=calendar.month(jahr, i+1)
-    d.text((80,940),cal,font=fnt, fill=(200,0,0))
+    d.text((80,970),cal,font=fnt, fill=(200,0,0))
 
     daten = months[monate[i]]
     daten = [j[:2] for j in daten]
@@ -91,16 +93,16 @@ for i in range(12):
         cal = re.sub("\n"+j+" ","\n"+repl+" ",cal)
         cal = re.sub(" "+j+"\n"," "+repl+"\n",cal)
         cal = re.sub("\n"+j+"\n","\n"+repl+"\n",cal)
-    d.text((80,940),cal,font=fnt, fill=fcol)
+    d.text((80,970),cal,font=fnt, fill=fcol)
     
     # Kalenderspruch
-    spruch = multiple_replace(replacements, sprueche[i]) #ä,ö,ü
+    spruch = sprueche[i]
     spruch = '"'+spruch[4:]+'"' # Zeilen im txt-Dokument beginnen mit "01: "
-    offset = 1050 # y Achse Startpunkt
+    offset = 1100 # y Achse Startpunkt
     fnt = spruchfont
-    for line in textwrap.wrap(spruch, width=21):
+    for line in textwrap.wrap(spruch, width=25):
         d.text((830, offset), line, font=fnt, fill=(0, 80, 0))
-        offset += fnt.getsize(line)[1]
+        offset += 45#fnt.getsize(line)[1] + 10
 
 
     #background.show()

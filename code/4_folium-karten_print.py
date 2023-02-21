@@ -5,21 +5,20 @@ Created on Sun Aug 18 21:01:38 2019
 @author: josch
 """
 import folium
-import pandas as pd
 from geopy.geocoders import Nominatim
 import time
 import json
 from selenium import webdriver
-import re
 import os
-from tqdm import tqdm
-path="./"
+path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2023/"
 os.chdir(path)
 from commons import get_street_coords
 
 # Ä,Ö,Ü einsetzen
 from commons import multiple_replace
-replacements = {"Ã„":"Ä", "Ãœ":"Ü", "Ã–":"Ö"}
+#replacements = {"Ã„":"Ä", "Ãœ":"Ü", "Ã–":"Ö", "ã„":"ä", "ãœ":"ü", "ã–":"ö"} #"ã¼":"ü"}
+#replacements = {v: k for k, v in replacements.items()} # Zuordnung umdrehen
+replacements = {"ã„":"ä", "ãœ":"ü", "ã–":"ö", "ã¼":"ü", "ã¤":"ä", "ã¶":"ö"}
 
 delay=1 # für den Browser
 
@@ -37,6 +36,7 @@ with open('sperrmuellkalender.json', 'r') as f:
     liste = json.load(f)
 with open('street_coords.json', 'r') as f:
     street_coords = json.load(f)
+street_coords = {multiple_replace(replacements, k.lower()): v for k, v in street_coords.items()} #Kleinschreibung der keys, weil die Straßennamen im Kalender selten komplett großgeschrieben sind.
 
 monate = ["01","02","03","04","05","06","07","08","09","10","11","12"]
     
@@ -51,7 +51,7 @@ mytiles = ["CartoDB positron", "Stamen Toner", "Stamen Watercolor", "Stamen Tone
 
 karlsruhe_long_lat = [8.4034195, 49.0068705][::-1]
 
-addr = geolocator.geocode({'street':'Am Zirkel', 'city':'Karlsruhe'})
+addr = geolocator.geocode({'street':'Uhlandstraße', 'city':'Karlsruhe'})
 addr = [addr.latitude, addr.longitude]
 home_marker = folium.Marker(addr, icon=folium.Icon(color="red", icon="home"))
 
@@ -79,13 +79,13 @@ for i in range(12):
 
     m = folium.Map(location=karlsruhe_long_lat, tiles=mytiles[i], zoom_start=13)
     for j in streets[monate[i]]:
-        try:
-            addr = street_coords[j][::-1]
-        except KeyError: #falsche Codierung ä, ö, ü
-            try:
-                addr = street_coords[multiple_replace(replacements, j)][::-1]
-            except TypeError: # Straßennamen mit "Gewann" geben None
+        j = multiple_replace(replacements, j.lower()) # weil alle Keys von street_coords klein
+        addr = street_coords[j]
+        try: 
+            addr = addr[::-1]
+        except TypeError: # Straßennamen mit "Gewann" geben None
                 addr=[0,0]
+
         folium.Marker(addr, color="darkred").add_to(m)
 
     home_marker.add_to(m)
