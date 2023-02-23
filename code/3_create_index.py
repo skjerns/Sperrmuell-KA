@@ -48,18 +48,19 @@ def index(folder):
 
 if __name__ == '__main__':
     main('..')
-    
+
     #manually fix to make interactive map on top
     with open('../index.html', 'r') as f:
         lines = f.readlines()
     year = lines[13][20:24]
     lines[3] = f'<h2>Sperrmüllkalender Karlsruhe nach Datum für {year}</h2>'
-    lines.insert(4, 'Es gibt jetzt auch eine <b>interaktive Karte</b>:<br><br> <li>klicke hier -->> <a href="./interactive_map.html"> <b>interaktive Karte</b></a></li>')
-    lines.insert(5, '<br>Ansonsten wie gewohnt hier die Ordner per Monat:')
+    lines.insert(4, 'Es gibt jetzt auch eine <b>interaktive Karte</b>:<br><br> <li>klicke hier --> <a href="./interactive_map.html"> <b>interaktive Karte</b></a></li>')
+    lines.insert(5, 'Sonst auch <b>ausdruckbare Kalender</b>: <li>-->> <a href="./print/"> <b>Kalenderblätter</b></a></li>')
+
+    lines.insert(6, '<br>Ansonsten wie gewohnt hier die Ordner per Monat:')
 
     html = '\n'.join(lines)
     html = html.replace('..', '.')
-    
+
     with open('../index.html', 'w') as f:
         f.writelines(html)
-        
