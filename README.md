@@ -1,4 +1,4 @@
-# Sperrmüll-Lageplan Karlsruhe
+# Sperrmüll-Kalender Karlsruhe 2023
 ### nach Tagen sortiert
 
 Sperrmüll-Kalender der Stadt Karlsruhe nach Datum sortiert. Mit diesem Tool könnt ihr sehen an welchen Tagen wo in Karlsruhe Sperrmüll ist. Es gibt eine interaktive Karte, oder statische Karten nach Tag sortiert. Lasst mich gerne wissen, wenn es mal wieder ein neues Jahr ist und ich vergessen habe das Tool zu updaten.
