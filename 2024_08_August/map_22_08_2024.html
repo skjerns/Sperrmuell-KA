@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_16767b990ccb45e563a2e587ea3f2476 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_16767b990ccb45e563a2e587ea3f2476" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_16767b990ccb45e563a2e587ea3f2476 = L.map(
+                "map_16767b990ccb45e563a2e587ea3f2476",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_842103927644de4ca309cb227bf3e349 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_842103927644de4ca309cb227bf3e349.addTo(map_16767b990ccb45e563a2e587ea3f2476);
+        
+    
+            var marker_5187d96d72605904c608888aabea2148 = L.marker(
+                [49.0075618, 8.3805527],
+                {}
+            ).addTo(map_16767b990ccb45e563a2e587ea3f2476);
+        
+    
+        var popup_28d7b331c462dc419bbc84da7d8b388d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81b903bd0a614c80f537511fe7e11546 = $(`<div id="html_81b903bd0a614c80f537511fe7e11546" style="width: 100.0%; height: 100.0%;">Bettina-Von-Arnim-Weg</div>`)[0];
+                popup_28d7b331c462dc419bbc84da7d8b388d.setContent(html_81b903bd0a614c80f537511fe7e11546);
+            
+        
+
+        marker_5187d96d72605904c608888aabea2148.bindPopup(popup_28d7b331c462dc419bbc84da7d8b388d)
+        ;
+
+        
+    
+    
+            marker_5187d96d72605904c608888aabea2148.bindTooltip(
+                `<div>
+                     Bettina-Von-Arnim-Weg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a5c041e6b23a07ea96dbd13c7ac27f9 = L.marker(
+                [49.0104721, 8.3818997],
+                {}
+            ).addTo(map_16767b990ccb45e563a2e587ea3f2476);
+        
+    
+        var popup_1746dfe3884c43ca352d292c78fb9c4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d10c8c92f47c55b92dd5ba36c123478b = $(`<div id="html_d10c8c92f47c55b92dd5ba36c123478b" style="width: 100.0%; height: 100.0%;">Scheffelstrasse</div>`)[0];
+                popup_1746dfe3884c43ca352d292c78fb9c4e.setContent(html_d10c8c92f47c55b92dd5ba36c123478b);
+            
+        
+
+        marker_4a5c041e6b23a07ea96dbd13c7ac27f9.bindPopup(popup_1746dfe3884c43ca352d292c78fb9c4e)
+        ;
+
+        
+    
+    
+            marker_4a5c041e6b23a07ea96dbd13c7ac27f9.bindTooltip(
+                `<div>
+                     Scheffelstrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08ff4dc5229abc2186971dc10b2a73e3 = L.marker(
+                [49.0091588, 8.3795819],
+                {}
+            ).addTo(map_16767b990ccb45e563a2e587ea3f2476);
+        
+    
+        var popup_e58d78b81221af725939eed4a7e831a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c825f19303f9ec1731a1b2e73b057d3 = $(`<div id="html_7c825f19303f9ec1731a1b2e73b057d3" style="width: 100.0%; height: 100.0%;">Schillerstrasse</div>`)[0];
+                popup_e58d78b81221af725939eed4a7e831a1.setContent(html_7c825f19303f9ec1731a1b2e73b057d3);
+            
+        
+
+        marker_08ff4dc5229abc2186971dc10b2a73e3.bindPopup(popup_e58d78b81221af725939eed4a7e831a1)
+        ;
+
+        
+    
+    
+            marker_08ff4dc5229abc2186971dc10b2a73e3.bindTooltip(
+                `<div>
+                     Schillerstrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

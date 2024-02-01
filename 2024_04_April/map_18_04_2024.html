@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_354e42f4f4eced22b97e5bcb6345fb6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_354e42f4f4eced22b97e5bcb6345fb6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_354e42f4f4eced22b97e5bcb6345fb6b = L.map(
+                "map_354e42f4f4eced22b97e5bcb6345fb6b",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_480e17f0c3b074830177c0893730b169 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_480e17f0c3b074830177c0893730b169.addTo(map_354e42f4f4eced22b97e5bcb6345fb6b);
+        
+    
+            var marker_8bf6db2c4ae46eaa0b0c1b2ffa3da2b3 = L.marker(
+                [48.9974107, 8.408362],
+                {}
+            ).addTo(map_354e42f4f4eced22b97e5bcb6345fb6b);
+        
+    
+        var popup_f93bc5b981ca56f7633a12817777cbb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c348be335d102ff7ca3a3e9c48fbdc9 = $(`<div id="html_9c348be335d102ff7ca3a3e9c48fbdc9" style="width: 100.0%; height: 100.0%;">Marienstrasse</div>`)[0];
+                popup_f93bc5b981ca56f7633a12817777cbb2.setContent(html_9c348be335d102ff7ca3a3e9c48fbdc9);
+            
+        
+
+        marker_8bf6db2c4ae46eaa0b0c1b2ffa3da2b3.bindPopup(popup_f93bc5b981ca56f7633a12817777cbb2)
+        ;
+
+        
+    
+    
+            marker_8bf6db2c4ae46eaa0b0c1b2ffa3da2b3.bindTooltip(
+                `<div>
+                     Marienstrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e77d10fb0c6c4873fdb8831fff67862c = L.marker(
+                [49.0044466, 8.4078563],
+                {}
+            ).addTo(map_354e42f4f4eced22b97e5bcb6345fb6b);
+        
+    
+        var popup_f09069498d579f7752129bd1d0aef0dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63262a4faa6e8a593534341159558e0b = $(`<div id="html_63262a4faa6e8a593534341159558e0b" style="width: 100.0%; height: 100.0%;">Meidingerstrasse</div>`)[0];
+                popup_f09069498d579f7752129bd1d0aef0dc.setContent(html_63262a4faa6e8a593534341159558e0b);
+            
+        
+
+        marker_e77d10fb0c6c4873fdb8831fff67862c.bindPopup(popup_f09069498d579f7752129bd1d0aef0dc)
+        ;
+
+        
+    
+    
+            marker_e77d10fb0c6c4873fdb8831fff67862c.bindTooltip(
+                `<div>
+                     Meidingerstrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a0ce92a6d8e951fd2945cc37a16cb9a = L.marker(
+                [49.0013511, 8.4032326],
+                {}
+            ).addTo(map_354e42f4f4eced22b97e5bcb6345fb6b);
+        
+    
+        var popup_e7f855fedbac659bf99e5462fe24bffb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d3063c065294a1d5df6ba56143e041e = $(`<div id="html_5d3063c065294a1d5df6ba56143e041e" style="width: 100.0%; height: 100.0%;">Werderstrasse</div>`)[0];
+                popup_e7f855fedbac659bf99e5462fe24bffb.setContent(html_5d3063c065294a1d5df6ba56143e041e);
+            
+        
+
+        marker_2a0ce92a6d8e951fd2945cc37a16cb9a.bindPopup(popup_e7f855fedbac659bf99e5462fe24bffb)
+        ;
+
+        
+    
+    
+            marker_2a0ce92a6d8e951fd2945cc37a16cb9a.bindTooltip(
+                `<div>
+                     Werderstrasse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
