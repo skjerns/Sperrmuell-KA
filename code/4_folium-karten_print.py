@@ -39,14 +39,14 @@ with open('street_coords.json', 'r') as f:
 street_coords = {multiple_replace(replacements, k.lower()): v for k, v in street_coords.items()} #Kleinschreibung der keys, weil die Straßennamen im Kalender selten komplett großgeschrieben sind.
 
 monate = ["01","02","03","04","05","06","07","08","09","10","11","12"]
-    
+
 monatsnamen = ['Januar','Februar','Maerz','April','Mai','Juni',
                'Juli','August','September','Oktober','November','Dezember']
 #mytiles = ["Stamen Terrain" for i in range(12)]
-mytiles = ["CartoDB positron", "Stamen Toner", "Stamen Watercolor", "Stamen Toner", 
-           "Stamen Watercolor", "Stamen Terrain", "OpenStreetMap", "Stamen Watercolor", 
+mytiles = ["CartoDB positron", "Stamen Toner", "Stamen Watercolor", "Stamen Toner",
+           "Stamen Watercolor", "Stamen Terrain", "OpenStreetMap", "Stamen Watercolor",
            "Stamen Terrain", "OpenStreetMap", "Stamen Toner", "CartoDB positron"]
-    # tiles: OpenStreetMap, Stamen Terrain, Stamen Toner, Stamen Watercolor, 
+    # tiles: OpenStreetMap, Stamen Terrain, Stamen Toner, Stamen Watercolor,
     #"CartoDB" (positron and dark_matter), Mapbox Bright, Mapbox Control Room (nur best. Zoomlevel)
 
 karlsruhe_long_lat = [8.4034195, 49.0068705][::-1]
@@ -61,11 +61,11 @@ streets = {}
 for date in list(liste):
     month = date[3:5]
     #year = date[-4:]
-    try: 
+    try:
         streets[month] += [liste[date][0]]
     except KeyError:
         streets[month] = [liste[date][0]]
-      
+
 try:
     browser = webdriver.Firefox()# benötigt geckodriver Datei im Python Verzeichnis (C:\Anaconda) (Bezeichnung PATH), außerdem Python und Visual C++ Redistributable
 except WebDriverException:
@@ -81,7 +81,7 @@ for i in range(12):
     for j in streets[monate[i]]:
         j = multiple_replace(replacements, j.lower()) # weil alle Keys von street_coords klein
         addr = street_coords[j]
-        try: 
+        try:
             addr = addr[::-1]
         except TypeError: # Straßennamen mit "Gewann" geben None
                 addr=[0,0]
@@ -89,13 +89,11 @@ for i in range(12):
         folium.Marker(addr, color="darkred").add_to(m)
 
     home_marker.add_to(m)
-    fname = path+'png_html/map_'+monate[i]+'_'+monatsnamen[i]        
+    fname = path+'png_html/map_'+monate[i]+'_'+monatsnamen[i]
     m.save(fname+'.html')
-    
-    browser.get("file:///"+fname+".html")    
+
+    browser.get("file:///"+fname+".html")
     #Give the map tiles some time to load
     time.sleep(delay)
     browser.save_screenshot(fname+".png")
-browser.quit()   
-    
-    
+browser.quit()
