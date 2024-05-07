@@ -4,6 +4,11 @@ Created on Wed Dec 18 21:15:20 2019
 
 @author: josch
 """
+# params
+jahr = 2024
+path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2024/"
+
+#
 import json
 from PIL import Image
 from PIL import ImageDraw, ImageFont
@@ -12,13 +17,10 @@ import calendar
 import re
 import os
 import textwrap
-path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2023/"
 os.chdir(path)
 from commons import multiple_replace
 path_maps = path + "png_html/"
 path_out = path + "print/"
-
-jahr = 2023
 
 # Daten, an denen Sperrmüll stattfindet
 with open('sperrmuellkalender.json', 'r') as f:
@@ -97,7 +99,7 @@ for i in range(12):
     
     # Kalenderspruch
     spruch = sprueche[i]
-    spruch = '"'+spruch[4:]+'"' # Zeilen im txt-Dokument beginnen mit "01: "
+    spruch = spruch[4:] # Zeilen im txt-Dokument beginnen mit "01: "
     offset = 1100 # y Achse Startpunkt
     fnt = spruchfont
     for line in textwrap.wrap(spruch, width=25):
