@@ -9,10 +9,11 @@ from geopy.geocoders import Nominatim
 import time
 import json
 from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 import os
-path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2023/"
+path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2024/"
 os.chdir(path)
-from commons import get_street_coords
 
 # Ä,Ö,Ü einsetzen
 from commons import multiple_replace
@@ -22,12 +23,11 @@ replacements = {"ã„":"ä", "ãœ":"ü", "ã–":"ö", "ã¼":"ü", "ã¤":"ä
 
 delay=1 # für den Browser
 
-geolocator = Nominatim(user_agent="my-application")
+geolocator = Nominatim(user_agent="http")
 ka = geolocator.geocode("Karlsruhe")
 ka = [ka.latitude, ka.longitude]
 #m = folium.Map(location=ka, tiles='OpenStreetMap', zoom_start=14)
 #m.save(path+r'\Karlsruhe_map.html')
-
 
 #############################
 # Kalender einlesen aus Hauptdatei
@@ -43,18 +43,21 @@ monate = ["01","02","03","04","05","06","07","08","09","10","11","12"]
 monatsnamen = ['Januar','Februar','Maerz','April','Mai','Juni',
                'Juli','August','September','Oktober','November','Dezember']
 #mytiles = ["Stamen Terrain" for i in range(12)]
-mytiles = ["CartoDB positron", "Stamen Toner", "Stamen Watercolor", "Stamen Toner",
-           "Stamen Watercolor", "Stamen Terrain", "OpenStreetMap", "Stamen Watercolor",
-           "Stamen Terrain", "OpenStreetMap", "Stamen Toner", "CartoDB positron"]
+mytiles = ["CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap",
+           "CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap",
+           "CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap"]
+# alte tiles funktionieren teilweise nicht mehr.
+# mytiles = ["CartoDB positron", "Stamen Toner", "Stamen Watercolor", "Stamen Toner",
+           # "Stamen Watercolor", "Stamen Terrain", "OpenStreetMap", "Stamen Watercolor",
+           # "Stamen Terrain", "OpenStreetMap", "Stamen Toner", "CartoDB positron"]
     # tiles: OpenStreetMap, Stamen Terrain, Stamen Toner, Stamen Watercolor,
     #"CartoDB" (positron and dark_matter), Mapbox Bright, Mapbox Control Room (nur best. Zoomlevel)
 
 karlsruhe_long_lat = [8.4034195, 49.0068705][::-1]
 
-addr = geolocator.geocode({'street':'Uhlandstraße', 'city':'Karlsruhe'})
-addr = [addr.latitude, addr.longitude]
-home_marker = folium.Marker(addr, icon=folium.Icon(color="red", icon="home"))
-
+# addr = geolocator.geocode({'street':'...', 'city':'Karlsruhe'})
+# addr = [addr.latitude, addr.longitude]
+# home_marker = folium.Marker(addr, icon=folium.Icon(color="red", icon="home"))
 
 # eine Straße pro Tag in dict schreiben für Monatsübersicht, Monate als keys
 streets = {}
@@ -66,10 +69,8 @@ for date in list(liste):
     except KeyError:
         streets[month] = [liste[date][0]]
 
-try:
-    browser = webdriver.Firefox()# benötigt geckodriver Datei im Python Verzeichnis (C:\Anaconda) (Bezeichnung PATH), außerdem Python und Visual C++ Redistributable
-except WebDriverException:
-    pass
+
+browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install())) #pip install webdriver-manager
 
 
 
@@ -78,6 +79,7 @@ except WebDriverException:
 for i in range(12):
 
     m = folium.Map(location=karlsruhe_long_lat, tiles=mytiles[i], zoom_start=13)
+    # Einen Marker pro Tag hinzufügen
     for j in streets[monate[i]]:
         j = multiple_replace(replacements, j.lower()) # weil alle Keys von street_coords klein
         addr = street_coords[j]
@@ -85,10 +87,11 @@ for i in range(12):
             addr = addr[::-1]
         except TypeError: # Straßennamen mit "Gewann" geben None
                 addr=[0,0]
+        
+        # Marker-Optik
+        icon_params = folium.Icon(icon='recycle', prefix='fa', color='darkpurple',icon_color='#FFFF00')
+        folium.Marker(addr, icon=icon_params).add_to(m)
 
-        folium.Marker(addr, color="darkred").add_to(m)
-
-    home_marker.add_to(m)
     fname = path+'png_html/map_'+monate[i]+'_'+monatsnamen[i]
     m.save(fname+'.html')
 
