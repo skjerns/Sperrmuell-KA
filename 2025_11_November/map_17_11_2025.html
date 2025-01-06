@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b750122fa0b3fd8a6d64f21304faa289 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b750122fa0b3fd8a6d64f21304faa289" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b750122fa0b3fd8a6d64f21304faa289 = L.map(
+                "map_b750122fa0b3fd8a6d64f21304faa289",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e47cb1bbe1d83a00ae87f7925eb02b3e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e47cb1bbe1d83a00ae87f7925eb02b3e.addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+            var marker_a20b3c87e195ef2ce63db85c420cf893 = L.marker(
+                [48.98232520570887, 8.374132876059615],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_435283f1559dc0dde75a10abd4db035c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6cf050d5986a409a0c11f2b27371eda = $(`<div id="html_a6cf050d5986a409a0c11f2b27371eda" style="width: 100.0%; height: 100.0%;">Gebrüder-Bachert-Strasse</div>`)[0];
+                popup_435283f1559dc0dde75a10abd4db035c.setContent(html_a6cf050d5986a409a0c11f2b27371eda);
+            
+        
+
+        marker_a20b3c87e195ef2ce63db85c420cf893.bindPopup(popup_435283f1559dc0dde75a10abd4db035c)
+        ;
+
+        
+    
+    
+            marker_a20b3c87e195ef2ce63db85c420cf893.bindTooltip(
+                `<div>
+                     Gebrüder-Bachert-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb96a6c88366bf14bba225292fc08c1c = L.marker(
+                [48.981669525743165, 8.373988892357067],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_c9f24ade2f7e9e25c2f05443c065c1dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_168526c4ba31af157410729f6664a329 = $(`<div id="html_168526c4ba31af157410729f6664a329" style="width: 100.0%; height: 100.0%;">Gebrüder-Himmelheber-Strasse</div>`)[0];
+                popup_c9f24ade2f7e9e25c2f05443c065c1dc.setContent(html_168526c4ba31af157410729f6664a329);
+            
+        
+
+        marker_fb96a6c88366bf14bba225292fc08c1c.bindPopup(popup_c9f24ade2f7e9e25c2f05443c065c1dc)
+        ;
+
+        
+    
+    
+            marker_fb96a6c88366bf14bba225292fc08c1c.bindTooltip(
+                `<div>
+                     Gebrüder-Himmelheber-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a6064449cba59d443452b06bedf1940 = L.marker(
+                [48.9836623, 8.3716322],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_f1bdb6095dbe18dfda1c21d858e35efd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e59783a072fbebe09ca41f01d67561f8 = $(`<div id="html_e59783a072fbebe09ca41f01d67561f8" style="width: 100.0%; height: 100.0%;">Grossoberfeld</div>`)[0];
+                popup_f1bdb6095dbe18dfda1c21d858e35efd.setContent(html_e59783a072fbebe09ca41f01d67561f8);
+            
+        
+
+        marker_1a6064449cba59d443452b06bedf1940.bindPopup(popup_f1bdb6095dbe18dfda1c21d858e35efd)
+        ;
+
+        
+    
+    
+            marker_1a6064449cba59d443452b06bedf1940.bindTooltip(
+                `<div>
+                     Grossoberfeld
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8af36130a654605703511d462d194b39 = L.marker(
+                [48.9825976, 8.3757187],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_e3a5118870dba1705a5b976e2783d8ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a143165be197df89ff4ddbb139c0b66f = $(`<div id="html_a143165be197df89ff4ddbb139c0b66f" style="width: 100.0%; height: 100.0%;">Im Mittelfeld</div>`)[0];
+                popup_e3a5118870dba1705a5b976e2783d8ba.setContent(html_a143165be197df89ff4ddbb139c0b66f);
+            
+        
+
+        marker_8af36130a654605703511d462d194b39.bindPopup(popup_e3a5118870dba1705a5b976e2783d8ba)
+        ;
+
+        
+    
+    
+            marker_8af36130a654605703511d462d194b39.bindTooltip(
+                `<div>
+                     Im Mittelfeld
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a90434ad56240c4ca32a7c49de6dd09d = L.marker(
+                [48.9799156, 8.3707953],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_2107e58ac8f84e0262ff11676236d6aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ffd34f10bb86d6d03be1161729a617c = $(`<div id="html_4ffd34f10bb86d6d03be1161729a617c" style="width: 100.0%; height: 100.0%;">Kleinoberfeld</div>`)[0];
+                popup_2107e58ac8f84e0262ff11676236d6aa.setContent(html_4ffd34f10bb86d6d03be1161729a617c);
+            
+        
+
+        marker_a90434ad56240c4ca32a7c49de6dd09d.bindPopup(popup_2107e58ac8f84e0262ff11676236d6aa)
+        ;
+
+        
+    
+    
+            marker_a90434ad56240c4ca32a7c49de6dd09d.bindTooltip(
+                `<div>
+                     Kleinoberfeld
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_871357884b8b488631fb449e6dadb513 = L.marker(
+                [48.9826615, 8.3739661],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_ea51d1fa943d5da156e182909550ecf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6ecc8c19441058ee72bc15916391f35 = $(`<div id="html_f6ecc8c19441058ee72bc15916391f35" style="width: 100.0%; height: 100.0%;">Litzenhardtstrasse</div>`)[0];
+                popup_ea51d1fa943d5da156e182909550ecf1.setContent(html_f6ecc8c19441058ee72bc15916391f35);
+            
+        
+
+        marker_871357884b8b488631fb449e6dadb513.bindPopup(popup_ea51d1fa943d5da156e182909550ecf1)
+        ;
+
+        
+    
+    
+            marker_871357884b8b488631fb449e6dadb513.bindTooltip(
+                `<div>
+                     Litzenhardtstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb69df0bfcbb8c1522d379bc9260a22f = L.marker(
+                [48.9823721, 8.3792024],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_cfd5a027b8cada630d9e686533106703 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a796f143f848ba505b3ac19165036054 = $(`<div id="html_a796f143f848ba505b3ac19165036054" style="width: 100.0%; height: 100.0%;">Lohwiesenweg</div>`)[0];
+                popup_cfd5a027b8cada630d9e686533106703.setContent(html_a796f143f848ba505b3ac19165036054);
+            
+        
+
+        marker_cb69df0bfcbb8c1522d379bc9260a22f.bindPopup(popup_cfd5a027b8cada630d9e686533106703)
+        ;
+
+        
+    
+    
+            marker_cb69df0bfcbb8c1522d379bc9260a22f.bindTooltip(
+                `<div>
+                     Lohwiesenweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cbe2a0a8dcc27fb1a750a4f30ac3ef0d = L.marker(
+                [48.9779955, 8.3710942],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_8db96d03e9c042226361490678cf2d71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_438e43bf3747780b4d1de6d210cda727 = $(`<div id="html_438e43bf3747780b4d1de6d210cda727" style="width: 100.0%; height: 100.0%;">Oberrossweide Gewann</div>`)[0];
+                popup_8db96d03e9c042226361490678cf2d71.setContent(html_438e43bf3747780b4d1de6d210cda727);
+            
+        
+
+        marker_cbe2a0a8dcc27fb1a750a4f30ac3ef0d.bindPopup(popup_8db96d03e9c042226361490678cf2d71)
+        ;
+
+        
+    
+    
+            marker_cbe2a0a8dcc27fb1a750a4f30ac3ef0d.bindTooltip(
+                `<div>
+                     Oberrossweide Gewann
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_097f3c81951eeb944d6fb0053572cbba = L.marker(
+                [48.9823512, 8.3704532],
+                {
+}
+            ).addTo(map_b750122fa0b3fd8a6d64f21304faa289);
+        
+    
+        var popup_a25b4a08d6ef0336f13c3e7901845e37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ea3fe2a9696c1c541a21afc8946b91d = $(`<div id="html_3ea3fe2a9696c1c541a21afc8946b91d" style="width: 100.0%; height: 100.0%;">Wilhelm-Leuschner-Strasse</div>`)[0];
+                popup_a25b4a08d6ef0336f13c3e7901845e37.setContent(html_3ea3fe2a9696c1c541a21afc8946b91d);
+            
+        
+
+        marker_097f3c81951eeb944d6fb0053572cbba.bindPopup(popup_a25b4a08d6ef0336f13c3e7901845e37)
+        ;
+
+        
+    
+    
+            marker_097f3c81951eeb944d6fb0053572cbba.bindTooltip(
+                `<div>
+                     Wilhelm-Leuschner-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
