@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3e04946803754b65ef452d4cbdd95b7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f3e04946803754b65ef452d4cbdd95b7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f3e04946803754b65ef452d4cbdd95b7 = L.map(
+                "map_f3e04946803754b65ef452d4cbdd95b7",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cfc9d059ea7b27e25177401cf2ff7c12 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cfc9d059ea7b27e25177401cf2ff7c12.addTo(map_f3e04946803754b65ef452d4cbdd95b7);
+        
+    
+            var marker_b0dcf486d41f7db1e38e06d57754d906 = L.marker(
+                [49.0086345, 8.419324],
+                {
+}
+            ).addTo(map_f3e04946803754b65ef452d4cbdd95b7);
+        
+    
+        var popup_ff4e1924cecd0c94b4507d747341b0d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e38901f4a84194789a856eb8a47f6d5 = $(`<div id="html_8e38901f4a84194789a856eb8a47f6d5" style="width: 100.0%; height: 100.0%;">Durlacher Allee</div>`)[0];
+                popup_ff4e1924cecd0c94b4507d747341b0d7.setContent(html_8e38901f4a84194789a856eb8a47f6d5);
+            
+        
+
+        marker_b0dcf486d41f7db1e38e06d57754d906.bindPopup(popup_ff4e1924cecd0c94b4507d747341b0d7)
+        ;
+
+        
+    
+    
+            marker_b0dcf486d41f7db1e38e06d57754d906.bindTooltip(
+                `<div>
+                     Durlacher Allee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a68f02971f2a168c330cd1cf63f17375 = L.marker(
+                [49.0086345, 8.419324],
+                {
+}
+            ).addTo(map_f3e04946803754b65ef452d4cbdd95b7);
+        
+    
+        var popup_540193ed6e284f08ecda4dc7195890b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41cd3cbd6d9a10352e9ec0130f01925a = $(`<div id="html_41cd3cbd6d9a10352e9ec0130f01925a" style="width: 100.0%; height: 100.0%;">Durlacher Allee</div>`)[0];
+                popup_540193ed6e284f08ecda4dc7195890b1.setContent(html_41cd3cbd6d9a10352e9ec0130f01925a);
+            
+        
+
+        marker_a68f02971f2a168c330cd1cf63f17375.bindPopup(popup_540193ed6e284f08ecda4dc7195890b1)
+        ;
+
+        
+    
+    
+            marker_a68f02971f2a168c330cd1cf63f17375.bindTooltip(
+                `<div>
+                     Durlacher Allee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_96a4450ec7f77744767430ff505e6c69 = L.marker(
+                [49.0061184, 8.4418048],
+                {
+}
+            ).addTo(map_f3e04946803754b65ef452d4cbdd95b7);
+        
+    
+        var popup_f471018370036764fda57051d9d6326d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d41c0b36adaf8a54194b75e5131eb1fd = $(`<div id="html_d41c0b36adaf8a54194b75e5131eb1fd" style="width: 100.0%; height: 100.0%;">Gerwigstrasse</div>`)[0];
+                popup_f471018370036764fda57051d9d6326d.setContent(html_d41c0b36adaf8a54194b75e5131eb1fd);
+            
+        
+
+        marker_96a4450ec7f77744767430ff505e6c69.bindPopup(popup_f471018370036764fda57051d9d6326d)
+        ;
+
+        
+    
+    
+            marker_96a4450ec7f77744767430ff505e6c69.bindTooltip(
+                `<div>
+                     Gerwigstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

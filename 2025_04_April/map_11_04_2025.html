@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d6c8dbb7f8b23900ff87abd52e8820b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d6c8dbb7f8b23900ff87abd52e8820b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d6c8dbb7f8b23900ff87abd52e8820b = L.map(
+                "map_4d6c8dbb7f8b23900ff87abd52e8820b",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3840157888a5afdff0484b833604d8c1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3840157888a5afdff0484b833604d8c1.addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+            var marker_ca4654ee98f5fdbc2d408b980b6e3e19 = L.marker(
+                [49.0048026, 8.4000727],
+                {
+}
+            ).addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+        var popup_5ac6c8506d25aeed5c18b1bad0e55321 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a1de3e0c3e52e907e35ec215876e8d6 = $(`<div id="html_5a1de3e0c3e52e907e35ec215876e8d6" style="width: 100.0%; height: 100.0%;">Badenwerkstrasse Am Festplatz</div>`)[0];
+                popup_5ac6c8506d25aeed5c18b1bad0e55321.setContent(html_5a1de3e0c3e52e907e35ec215876e8d6);
+            
+        
+
+        marker_ca4654ee98f5fdbc2d408b980b6e3e19.bindPopup(popup_5ac6c8506d25aeed5c18b1bad0e55321)
+        ;
+
+        
+    
+    
+            marker_ca4654ee98f5fdbc2d408b980b6e3e19.bindTooltip(
+                `<div>
+                     Badenwerkstrasse Am Festplatz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2c820e74def216aade10ef6e967a00c6 = L.marker(
+                [49.0038928, 8.3920912],
+                {
+}
+            ).addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+        var popup_21d45a1c4b92a8df57e1cd6f7a6cd69c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a255019057a6c38bc6b0c6bfdefc6766 = $(`<div id="html_a255019057a6c38bc6b0c6bfdefc6766" style="width: 100.0%; height: 100.0%;">Friedenstrasse</div>`)[0];
+                popup_21d45a1c4b92a8df57e1cd6f7a6cd69c.setContent(html_a255019057a6c38bc6b0c6bfdefc6766);
+            
+        
+
+        marker_2c820e74def216aade10ef6e967a00c6.bindPopup(popup_21d45a1c4b92a8df57e1cd6f7a6cd69c)
+        ;
+
+        
+    
+    
+            marker_2c820e74def216aade10ef6e967a00c6.bindTooltip(
+                `<div>
+                     Friedenstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_092af9dfec2d8c328ea039849f9b57b1 = L.marker(
+                [49.0042945, 8.3860786],
+                {
+}
+            ).addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+        var popup_5d1f9073d64243efae7c341108eaa612 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a06b553290ad6bafcb8a003ebc3baab = $(`<div id="html_6a06b553290ad6bafcb8a003ebc3baab" style="width: 100.0%; height: 100.0%;">Gartenstrasse</div>`)[0];
+                popup_5d1f9073d64243efae7c341108eaa612.setContent(html_6a06b553290ad6bafcb8a003ebc3baab);
+            
+        
+
+        marker_092af9dfec2d8c328ea039849f9b57b1.bindPopup(popup_5d1f9073d64243efae7c341108eaa612)
+        ;
+
+        
+    
+    
+            marker_092af9dfec2d8c328ea039849f9b57b1.bindTooltip(
+                `<div>
+                     Gartenstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a4000c1b551f50f8a0afe35c3a8c6ba7 = L.marker(
+                [49.0039084, 8.403101],
+                {
+}
+            ).addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+        var popup_ea377fa996cd706091ad1e3cc073bd89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89f9f9f5d37a7cccaeb4db989bd4a5be = $(`<div id="html_89f9f9f5d37a7cccaeb4db989bd4a5be" style="width: 100.0%; height: 100.0%;">Hermann-Billing-Strasse</div>`)[0];
+                popup_ea377fa996cd706091ad1e3cc073bd89.setContent(html_89f9f9f5d37a7cccaeb4db989bd4a5be);
+            
+        
+
+        marker_a4000c1b551f50f8a0afe35c3a8c6ba7.bindPopup(popup_ea377fa996cd706091ad1e3cc073bd89)
+        ;
+
+        
+    
+    
+            marker_a4000c1b551f50f8a0afe35c3a8c6ba7.bindTooltip(
+                `<div>
+                     Hermann-Billing-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f6d9e97a5acfb20418a744901c3a3ef7 = L.marker(
+                [49.0034326, 8.3893593],
+                {
+}
+            ).addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+        var popup_71d405e44e948cb95257fe60b2c8c6f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_053398891e8b2e12dfa17c9989cee7cd = $(`<div id="html_053398891e8b2e12dfa17c9989cee7cd" style="width: 100.0%; height: 100.0%;">Otto-Sachs-Strasse</div>`)[0];
+                popup_71d405e44e948cb95257fe60b2c8c6f0.setContent(html_053398891e8b2e12dfa17c9989cee7cd);
+            
+        
+
+        marker_f6d9e97a5acfb20418a744901c3a3ef7.bindPopup(popup_71d405e44e948cb95257fe60b2c8c6f0)
+        ;
+
+        
+    
+    
+            marker_f6d9e97a5acfb20418a744901c3a3ef7.bindTooltip(
+                `<div>
+                     Otto-Sachs-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_125f8876ffc1168d9fc2ff0568c68652 = L.marker(
+                [49.0035106, 8.3933166],
+                {
+}
+            ).addTo(map_4d6c8dbb7f8b23900ff87abd52e8820b);
+        
+    
+        var popup_b19e1e63056e2f5b1748c74d0e1562a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_553160927f16d5ebffb35509d51c2db4 = $(`<div id="html_553160927f16d5ebffb35509d51c2db4" style="width: 100.0%; height: 100.0%;">Redtenbacherstrasse</div>`)[0];
+                popup_b19e1e63056e2f5b1748c74d0e1562a1.setContent(html_553160927f16d5ebffb35509d51c2db4);
+            
+        
+
+        marker_125f8876ffc1168d9fc2ff0568c68652.bindPopup(popup_b19e1e63056e2f5b1748c74d0e1562a1)
+        ;
+
+        
+    
+    
+            marker_125f8876ffc1168d9fc2ff0568c68652.bindTooltip(
+                `<div>
+                     Redtenbacherstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7290c0d77693c0d241fcd454820f4b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7290c0d77693c0d241fcd454820f4b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7290c0d77693c0d241fcd454820f4b6 = L.map(
+                "map_c7290c0d77693c0d241fcd454820f4b6",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3be715cb63df0aa0f837a9eccb4a58f7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3be715cb63df0aa0f837a9eccb4a58f7.addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+            var marker_295ee7b826d2547e7182f0153f7a9276 = L.marker(
+                [49.031499, 8.3597293],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_c3693195d4dadcda2d0f5d0ff8e4a813 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85d5d7e17a5c6d882ecffcfaf1b63ef7 = $(`<div id="html_85d5d7e17a5c6d882ecffcfaf1b63ef7" style="width: 100.0%; height: 100.0%;">Annweilerstrasse</div>`)[0];
+                popup_c3693195d4dadcda2d0f5d0ff8e4a813.setContent(html_85d5d7e17a5c6d882ecffcfaf1b63ef7);
+            
+        
+
+        marker_295ee7b826d2547e7182f0153f7a9276.bindPopup(popup_c3693195d4dadcda2d0f5d0ff8e4a813)
+        ;
+
+        
+    
+    
+            marker_295ee7b826d2547e7182f0153f7a9276.bindTooltip(
+                `<div>
+                     Annweilerstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_35ea4594c29ca33d31f1a8009a0cb999 = L.marker(
+                [49.0303202, 8.3457689],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_ffc7d805607a517e515a029d36c4f32b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_719d0ee4062b1f84f72cf0cc23009cbd = $(`<div id="html_719d0ee4062b1f84f72cf0cc23009cbd" style="width: 100.0%; height: 100.0%;">Carl-Schurz-Strasse</div>`)[0];
+                popup_ffc7d805607a517e515a029d36c4f32b.setContent(html_719d0ee4062b1f84f72cf0cc23009cbd);
+            
+        
+
+        marker_35ea4594c29ca33d31f1a8009a0cb999.bindPopup(popup_ffc7d805607a517e515a029d36c4f32b)
+        ;
+
+        
+    
+    
+            marker_35ea4594c29ca33d31f1a8009a0cb999.bindTooltip(
+                `<div>
+                     Carl-Schurz-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d8999fc17294be3ec84d865f05dc2272 = L.marker(
+                [49.035428, 8.3542369],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_112fd034cf19d1aa35cec2e3697ede8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a01ac385bb40e3fbdacd92fb596a5cc = $(`<div id="html_1a01ac385bb40e3fbdacd92fb596a5cc" style="width: 100.0%; height: 100.0%;">Ernst-Würtenberger-Strasse</div>`)[0];
+                popup_112fd034cf19d1aa35cec2e3697ede8f.setContent(html_1a01ac385bb40e3fbdacd92fb596a5cc);
+            
+        
+
+        marker_d8999fc17294be3ec84d865f05dc2272.bindPopup(popup_112fd034cf19d1aa35cec2e3697ede8f)
+        ;
+
+        
+    
+    
+            marker_d8999fc17294be3ec84d865f05dc2272.bindTooltip(
+                `<div>
+                     Ernst-Würtenberger-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55d1f0ae99a9a32244c53cd5e43432a5 = L.marker(
+                [49.0330945, 8.3564808],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_181fe390ae78c28c92f1e0ea0e0c82a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5b1d2ac8acca0289ed33a44f3f80037 = $(`<div id="html_e5b1d2ac8acca0289ed33a44f3f80037" style="width: 100.0%; height: 100.0%;">Eugen-Geiger-Strasse</div>`)[0];
+                popup_181fe390ae78c28c92f1e0ea0e0c82a8.setContent(html_e5b1d2ac8acca0289ed33a44f3f80037);
+            
+        
+
+        marker_55d1f0ae99a9a32244c53cd5e43432a5.bindPopup(popup_181fe390ae78c28c92f1e0ea0e0c82a8)
+        ;
+
+        
+    
+    
+            marker_55d1f0ae99a9a32244c53cd5e43432a5.bindTooltip(
+                `<div>
+                     Eugen-Geiger-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9cf5a2cfb849655be201bb18ef077fb1 = L.marker(
+                [49.0352775, 8.3554883],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_3e3730c71b41bbf7a45434b84f9257a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84e72edf567700a22c546d62b4525cd2 = $(`<div id="html_84e72edf567700a22c546d62b4525cd2" style="width: 100.0%; height: 100.0%;">Ferdinand-Keller-Strasse</div>`)[0];
+                popup_3e3730c71b41bbf7a45434b84f9257a1.setContent(html_84e72edf567700a22c546d62b4525cd2);
+            
+        
+
+        marker_9cf5a2cfb849655be201bb18ef077fb1.bindPopup(popup_3e3730c71b41bbf7a45434b84f9257a1)
+        ;
+
+        
+    
+    
+            marker_9cf5a2cfb849655be201bb18ef077fb1.bindTooltip(
+                `<div>
+                     Ferdinand-Keller-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8cddbb176dd9455e9ae10e07f36b791 = L.marker(
+                [49.0303211, 8.355889729870128],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_6d1b66ec8f5a7880dd05be7ba02a1487 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00eb6432adbca819f18a0fe0f7ad7130 = $(`<div id="html_00eb6432adbca819f18a0fe0f7ad7130" style="width: 100.0%; height: 100.0%;">G.-Braun-Strasse</div>`)[0];
+                popup_6d1b66ec8f5a7880dd05be7ba02a1487.setContent(html_00eb6432adbca819f18a0fe0f7ad7130);
+            
+        
+
+        marker_a8cddbb176dd9455e9ae10e07f36b791.bindPopup(popup_6d1b66ec8f5a7880dd05be7ba02a1487)
+        ;
+
+        
+    
+    
+            marker_a8cddbb176dd9455e9ae10e07f36b791.bindTooltip(
+                `<div>
+                     G.-Braun-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb79dc5337c150b5bce2252b19285450 = L.marker(
+                [49.0329713, 8.3503084],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_2953d5e68fd0ba63adec0bffd6a9eb0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54ef331aaa8c6870d0b83656a59ffa8c = $(`<div id="html_54ef331aaa8c6870d0b83656a59ffa8c" style="width: 100.0%; height: 100.0%;">Gustav-Schönleber-Strasse</div>`)[0];
+                popup_2953d5e68fd0ba63adec0bffd6a9eb0b.setContent(html_54ef331aaa8c6870d0b83656a59ffa8c);
+            
+        
+
+        marker_fb79dc5337c150b5bce2252b19285450.bindPopup(popup_2953d5e68fd0ba63adec0bffd6a9eb0b)
+        ;
+
+        
+    
+    
+            marker_fb79dc5337c150b5bce2252b19285450.bindTooltip(
+                `<div>
+                     Gustav-Schönleber-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_64441d2b004017045064add433b0acc9 = L.marker(
+                [49.0333474, 8.3557407],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_f78e0a68bfd9c73463929c911da1afee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0c3cd701282e969b153a29866b31f13 = $(`<div id="html_c0c3cd701282e969b153a29866b31f13" style="width: 100.0%; height: 100.0%;">Im Husarenlager</div>`)[0];
+                popup_f78e0a68bfd9c73463929c911da1afee.setContent(html_c0c3cd701282e969b153a29866b31f13);
+            
+        
+
+        marker_64441d2b004017045064add433b0acc9.bindPopup(popup_f78e0a68bfd9c73463929c911da1afee)
+        ;
+
+        
+    
+    
+            marker_64441d2b004017045064add433b0acc9.bindTooltip(
+                `<div>
+                     Im Husarenlager
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c5fd872adddcd6f556f11a7a0ac86cf = L.marker(
+                [49.0359277, 8.3534068],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_00d8517f9b85f35bedcaa0d13bdc3e84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d4bd93c47a5d7c1b245c5569cad0088 = $(`<div id="html_4d4bd93c47a5d7c1b245c5569cad0088" style="width: 100.0%; height: 100.0%;">Itzsteinstrasse</div>`)[0];
+                popup_00d8517f9b85f35bedcaa0d13bdc3e84.setContent(html_4d4bd93c47a5d7c1b245c5569cad0088);
+            
+        
+
+        marker_9c5fd872adddcd6f556f11a7a0ac86cf.bindPopup(popup_00d8517f9b85f35bedcaa0d13bdc3e84)
+        ;
+
+        
+    
+    
+            marker_9c5fd872adddcd6f556f11a7a0ac86cf.bindTooltip(
+                `<div>
+                     Itzsteinstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_33062b20169987d1a41b5e904d1e66aa = L.marker(
+                [49.0325106, 8.3470711],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_8687eddb5e353c4d6ad5717920ff08b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_008db78b4b185d81cf68fbb998de3a5c = $(`<div id="html_008db78b4b185d81cf68fbb998de3a5c" style="width: 100.0%; height: 100.0%;">Julius-Bergmann-Strasse</div>`)[0];
+                popup_8687eddb5e353c4d6ad5717920ff08b6.setContent(html_008db78b4b185d81cf68fbb998de3a5c);
+            
+        
+
+        marker_33062b20169987d1a41b5e904d1e66aa.bindPopup(popup_8687eddb5e353c4d6ad5717920ff08b6)
+        ;
+
+        
+    
+    
+            marker_33062b20169987d1a41b5e904d1e66aa.bindTooltip(
+                `<div>
+                     Julius-Bergmann-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a935daac05a467282f8c58df01bfb02 = L.marker(
+                [49.0315395, 8.3486577],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_10c940fa38da8293719767561a84872f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48952d9cdb03176d94c7d6cff70367c4 = $(`<div id="html_48952d9cdb03176d94c7d6cff70367c4" style="width: 100.0%; height: 100.0%;">Lassallestrasse</div>`)[0];
+                popup_10c940fa38da8293719767561a84872f.setContent(html_48952d9cdb03176d94c7d6cff70367c4);
+            
+        
+
+        marker_1a935daac05a467282f8c58df01bfb02.bindPopup(popup_10c940fa38da8293719767561a84872f)
+        ;
+
+        
+    
+    
+            marker_1a935daac05a467282f8c58df01bfb02.bindTooltip(
+                `<div>
+                     Lassallestrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5ac564f151aaabe4c946709ca355bbbb = L.marker(
+                [49.0367324, 8.3553036],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_811e2f9776409ab47f6850a051093038 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bca609814b1508b447e1d1aad8e7eebc = $(`<div id="html_bca609814b1508b447e1d1aad8e7eebc" style="width: 100.0%; height: 100.0%;">Ludwig-Dill-Strasse</div>`)[0];
+                popup_811e2f9776409ab47f6850a051093038.setContent(html_bca609814b1508b447e1d1aad8e7eebc);
+            
+        
+
+        marker_5ac564f151aaabe4c946709ca355bbbb.bindPopup(popup_811e2f9776409ab47f6850a051093038)
+        ;
+
+        
+    
+    
+            marker_5ac564f151aaabe4c946709ca355bbbb.bindTooltip(
+                `<div>
+                     Ludwig-Dill-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a29edb5da67abdbacb7c488e6943b069 = L.marker(
+                [49.0292527, 8.3444405],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_3550fd78923e2a3b8c99014bef7b7519 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7addef96e2c560052f96d01e4855a14a = $(`<div id="html_7addef96e2c560052f96d01e4855a14a" style="width: 100.0%; height: 100.0%;">Stiller Winkel</div>`)[0];
+                popup_3550fd78923e2a3b8c99014bef7b7519.setContent(html_7addef96e2c560052f96d01e4855a14a);
+            
+        
+
+        marker_a29edb5da67abdbacb7c488e6943b069.bindPopup(popup_3550fd78923e2a3b8c99014bef7b7519)
+        ;
+
+        
+    
+    
+            marker_a29edb5da67abdbacb7c488e6943b069.bindTooltip(
+                `<div>
+                     Stiller Winkel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_699b708a264cd5315b34f3aedf44d660 = L.marker(
+                [49.0308304, 8.3492542],
+                {
+}
+            ).addTo(map_c7290c0d77693c0d241fcd454820f4b6);
+        
+    
+        var popup_1f94e1b409405217237e51a9892e3b08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e0617b2030376117c914232fa512b97 = $(`<div id="html_7e0617b2030376117c914232fa512b97" style="width: 100.0%; height: 100.0%;">Wilhelm-Trübner-Weg</div>`)[0];
+                popup_1f94e1b409405217237e51a9892e3b08.setContent(html_7e0617b2030376117c914232fa512b97);
+            
+        
+
+        marker_699b708a264cd5315b34f3aedf44d660.bindPopup(popup_1f94e1b409405217237e51a9892e3b08)
+        ;
+
+        
+    
+    
+            marker_699b708a264cd5315b34f3aedf44d660.bindTooltip(
+                `<div>
+                     Wilhelm-Trübner-Weg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
