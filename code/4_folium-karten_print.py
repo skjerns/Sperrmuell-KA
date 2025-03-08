@@ -12,7 +12,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 import os
-path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2024/"
+path="C:/Users/joan9/Documents/Python Scripts/Sperrmuell/2025/"
 os.chdir(path)
 
 # Ä,Ö,Ü einsetzen
@@ -42,10 +42,11 @@ monate = ["01","02","03","04","05","06","07","08","09","10","11","12"]
 
 monatsnamen = ['Januar','Februar','Maerz','April','Mai','Juni',
                'Juli','August','September','Oktober','November','Dezember']
+mytiles = ["CyclOSM"]*12
 #mytiles = ["Stamen Terrain" for i in range(12)]
-mytiles = ["CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap",
-           "CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap",
-           "CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap"]
+# mytiles = ["CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap",
+#            "CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap",
+#            "CyclOSM", "CartoDB positron", "OPNVKarte", "OpenStreetMap"]
 # alte tiles funktionieren teilweise nicht mehr.
 # mytiles = ["CartoDB positron", "Stamen Toner", "Stamen Watercolor", "Stamen Toner",
            # "Stamen Watercolor", "Stamen Terrain", "OpenStreetMap", "Stamen Watercolor",
@@ -69,8 +70,8 @@ for date in list(liste):
     except KeyError:
         streets[month] = [liste[date][0]]
 
-
-browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install())) #pip install webdriver-manager
+# benötigt Firefox im System
+browser = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install())) 
 
 
 
@@ -89,7 +90,7 @@ for i in range(12):
                 addr=[0,0]
         
         # Marker-Optik
-        icon_params = folium.Icon(icon='recycle', prefix='fa', color='darkpurple',icon_color='#FFFF00')
+        icon_params = folium.Icon(icon='recycle', prefix='fa', color='#FF1111',icon_color='#FFFF00')
         folium.Marker(addr, icon=icon_params).add_to(m)
 
     fname = path+'png_html/map_'+monate[i]+'_'+monatsnamen[i]

@@ -5,9 +5,9 @@ Created on Wed Dec 18 21:15:20 2019
 @author: josch
 """
 # params
-jahr = 2024
-path="C:/Users/josch/Documents/Python Scripts/Sperrmuell/2024/"
-
+jahr = 2025
+path="C:/Users/joan9/Documents/Python Scripts/Sperrmuell/2025/"
+path_f = "C:/Users/joan9/AppData/Local/Microsoft/Windows/Fonts/"
 #
 import json
 from PIL import Image
@@ -20,6 +20,8 @@ import textwrap
 os.chdir(path)
 from commons import multiple_replace
 path_maps = path + "png_html/"
+path_imgs = path + "Bilder/"
+imgs = os.listdir(path_imgs)
 path_out = path + "print/"
 
 # Daten, an denen Sperrmüll stattfindet
@@ -36,51 +38,47 @@ for date in list(liste):
         months[month] = [date]
 
 fancy_fonts = ["Bemydor","Autumn Moon - TTF","Alyfe Demo",
-               "StripesCaps","Today_","Bemydor",
+               "StripesCaps","Today__","Bemydor",
                "CoventryGardenNF","BigLou","UndergroundNF",
-               "ExtraOrnamentalNo2","Beyond Wonderland","Mugnuts"]#,"nauvo__",
-# old fancy_fonts = ["Bemydor","Autumn Moon - TTF","Alyfe Demo",
-#                "StripesCaps","Today__","Malache Crunch",
-#                "CoventryGardenNF","BigLou","UndergroundNF",
-#                "ExtraOrnamentalNo2","Beyond Wonderland","Mugnuts"]
-fancy_fonts_mono = "IckyTicketMono,Kingthings Trypewriter 2,Vanthian Ragnarok,Beccaria,Harting Plain,software_tester,Kingthings Trypewriter 2,Harting Plain,IckyTicketMono,Kingthings Trypewriter 2,Vanthian Ragnarok,Beccaria".split(",")
-#fancy_fonts_mono = "IckyTicketMono,Kingthings Trypewriter 2,Vanthian Ragnarok,Beccaria,Harting Plain,EXITFONTFORAFILM,software_tester,hydrogen,Harting Plain,IckyTicketMono,Kingthings Trypewriter 2,EXITFONTFORAFILM".split(",")
+               "Alyfe Demo","Beyond Wonderland","Mugnuts"]#,"nauvo__",ExtraOrnamentalNo2
+fancy_fonts_mono = "IckyTicketMono"
+
 monatsnamen = ['Januar','Februar','Maerz','April','Mai','Juni',
                'Juli','August','September','Oktober','November','Dezember']
 monate = ["01","02","03","04","05","06","07","08","09","10","11","12"]
 fcol = (0, 0, 180) # Schriftfarbe
 
-#Kalendersprüche für die Ecke unten rechts (QR Code im vorherigen Design)
-with open('Kalenderspruch.txt', 'r') as f:
-    sprueche = f.read().splitlines() # besser als readlines, weil hier kein \n bleibt.
-replacements = {"Ã¼":"ü", "Ã¶":"ö", "Ã¤":"ä", "Ã–":"Ö", "ÃŸ":"ß", "Ã„":"Ä"}
-sprueche = [multiple_replace(replacements, sprueche[i]) for i in range(12)]
-
-spruchfont = ImageFont.truetype("C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts_mono[8]+".ttf",36)
 
 
 for i in range(12):
     monat = monatsnamen[i]
     
     img = Image.open(path_maps+"map_"+monate[i]+"_"+monat+".png", 'r')
-    background = Image.new('RGBA', (1284, 1450), (255, 255, 255, 255)) # In etwa DIN A4 Verhältnis
-    offset = (0,200) # // gibt ganze Zahlen
+    size = (int(img.size[0]*1.1), int(img.size[1]*2))
+    background = Image.new('RGBA', size, (255, 255, 255, 255)) # In etwa DIN A4 Verhältnis
+    offset = (int(img.size[0]*0.05),int(img.size[0]*0.15))
+    background.paste(img, offset)
+    
+    # Zusatzbild, Meme
+    img = Image.open(path_imgs+imgs[i], 'r')
+    offset = (int(size[0]*0.58), int(size[1]*0.57)) 
     background.paste(img, offset)
     #d = ImageDraw.Draw(background)
-    #d.text((10,10), "Hello World", fill=(255,255,0))
+
     
     #Überschrift
-    fntp="C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts[i]+".ttf"
-    fnt = ImageFont.truetype(fntp,50)
+    fntp = path_f+fancy_fonts[i]+".ttf"
+    fnt = ImageFont.truetype(fntp,72)
     d = ImageDraw.Draw(background)
-    d.text((70,5), "Sperrmuell im", font=fnt, fill=fcol)
-    fnt = ImageFont.truetype(fntp,100)
-    d.text((200,50), monat, font=fnt, fill=fcol)
+    d.text((80,50), "Sperrmuell im", font=fnt, fill=fcol)
+    fnt = ImageFont.truetype(fntp,130)
+    d.text((220,120), monat, font=fnt, fill=fcol)
  
     # Kalender
-    fnt = ImageFont.truetype("C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts_mono[i]+".ttf",60)
+    fnt = ImageFont.truetype(path_f+fancy_fonts_mono+".ttf",85)
     cal=calendar.month(jahr, i+1)
-    d.text((80,970),cal,font=fnt, fill=(200,0,0))
+    cal_pos = (int(size[1]*0.08), int(size[1]*0.68))
+    d.text(cal_pos,cal,font=fnt, fill=(200,0,0))
 
     daten = months[monate[i]]
     daten = [j[:2] for j in daten]
@@ -95,20 +93,26 @@ for i in range(12):
         cal = re.sub("\n"+j+" ","\n"+repl+" ",cal)
         cal = re.sub(" "+j+"\n"," "+repl+"\n",cal)
         cal = re.sub("\n"+j+"\n","\n"+repl+"\n",cal)
-    d.text((80,970),cal,font=fnt, fill=fcol)
+    d.text(cal_pos,cal,font=fnt, fill=fcol)
     
-    # Kalenderspruch
-    spruch = sprueche[i]
-    spruch = spruch[4:] # Zeilen im txt-Dokument beginnen mit "01: "
-    offset = 1100 # y Achse Startpunkt
-    fnt = spruchfont
-    for line in textwrap.wrap(spruch, width=25):
-        d.text((830, offset), line, font=fnt, fill=(0, 80, 0))
-        offset += 45#fnt.getsize(line)[1] + 10
-
-
     #background.show()
     background.save(path_out+monate[i]+"_"+monat+".png")
     
-
     
+#Kalendersprüche für die Ecke unten rechts (QR Code im vorherigen Design)
+# with open('Kalenderspruch.txt', 'r') as f:
+#     sprueche = f.read().splitlines() # besser als readlines, weil hier kein \n bleibt.
+# replacements = {"Ã¼":"ü", "Ã¶":"ö", "Ã¤":"ä", "Ã–":"Ö", "ÃŸ":"ß", "Ã„":"Ä"}
+# sprueche = [multiple_replace(replacements, sprueche[i]) for i in range(12)]
+
+# spruchfont = ImageFont.truetype("C:/Users/josch/AppData/Local/Microsoft/Windows/Fonts/"+fancy_fonts_mono[8]+".ttf",36)
+
+# -> diesen Teil in die for-Schleife
+     # # Kalenderspruch
+     # spruch = sprueche[i]
+     # spruch = spruch[4:] # Zeilen im txt-Dokument beginnen mit "01: "
+     # offset = 1100 # y Achse Startpunkt
+     # fnt = spruchfont
+     # for line in textwrap.wrap(spruch, width=25):
+     #     d.text((830, offset), line, font=fnt, fill=(0, 80, 0))
+     #     offset += 45#fnt.getsize(line)[1] + 10
