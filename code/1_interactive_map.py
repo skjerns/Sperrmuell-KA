@@ -119,5 +119,9 @@ html = html.replace('<div class="folium-map"',
                     Verschiebe den Regler auf das gewünschte Datum. Sperrmüllregion wird rot eingezeichnet
 
                     <div class="folium-map"''')
+
+html = html.replace('<input type="range" width="100px" min="0" max="130" value="0" step="1">',
+                    '<input type="range" width="300px" min="0" max="130" value="0" step="1">')
+
 with open(html_file, 'w') as f:
     f.write(html)
