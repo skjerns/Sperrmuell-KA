@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b6e7d91af9bf0559f06472e997dcfd40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b6e7d91af9bf0559f06472e997dcfd40" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b6e7d91af9bf0559f06472e997dcfd40 = L.map(
+                "map_b6e7d91af9bf0559f06472e997dcfd40",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6627e16dfce04bc569de74b5bd74d652 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6627e16dfce04bc569de74b5bd74d652.addTo(map_b6e7d91af9bf0559f06472e997dcfd40);
+        
+    
+            var marker_bce24b8f811a07dceedcb472535d1f71 = L.marker(
+                [49.0372085, 8.443981],
+                {
+}
+            ).addTo(map_b6e7d91af9bf0559f06472e997dcfd40);
+        
+    
+        var popup_12399bcab2c50307dbfabfab7af14146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b4203c482f353caaeb985531904c6de = $(`<div id="html_3b4203c482f353caaeb985531904c6de" style="width: 100.0%; height: 100.0%;">Insterburger Strasse</div>`)[0];
+                popup_12399bcab2c50307dbfabfab7af14146.setContent(html_3b4203c482f353caaeb985531904c6de);
+            
+        
+
+        marker_bce24b8f811a07dceedcb472535d1f71.bindPopup(popup_12399bcab2c50307dbfabfab7af14146)
+        ;
+
+        
+    
+    
+            marker_bce24b8f811a07dceedcb472535d1f71.bindTooltip(
+                `<div>
+                     Insterburger Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a979698948f8814cb1ab45c8c4e4193b = L.marker(
+                [49.0377859, 8.4350406],
+                {
+}
+            ).addTo(map_b6e7d91af9bf0559f06472e997dcfd40);
+        
+    
+        var popup_be0db60ae50a278224c6d13f61c6e75a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bd2a15496c0a00ab21984d723c46c4b = $(`<div id="html_4bd2a15496c0a00ab21984d723c46c4b" style="width: 100.0%; height: 100.0%;">Küstriner Strasse</div>`)[0];
+                popup_be0db60ae50a278224c6d13f61c6e75a.setContent(html_4bd2a15496c0a00ab21984d723c46c4b);
+            
+        
+
+        marker_a979698948f8814cb1ab45c8c4e4193b.bindPopup(popup_be0db60ae50a278224c6d13f61c6e75a)
+        ;
+
+        
+    
+    
+            marker_a979698948f8814cb1ab45c8c4e4193b.bindTooltip(
+                `<div>
+                     Küstriner Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c9b72030dc0f8de40e4157b25c6a7c41 = L.marker(
+                [49.0379675, 8.4362719],
+                {
+}
+            ).addTo(map_b6e7d91af9bf0559f06472e997dcfd40);
+        
+    
+        var popup_2524ecce50f9537a65480ae726f247e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dc95b12013609b891e7db1e342e5e18 = $(`<div id="html_9dc95b12013609b891e7db1e342e5e18" style="width: 100.0%; height: 100.0%;">Pillauer Strasse</div>`)[0];
+                popup_2524ecce50f9537a65480ae726f247e2.setContent(html_9dc95b12013609b891e7db1e342e5e18);
+            
+        
+
+        marker_c9b72030dc0f8de40e4157b25c6a7c41.bindPopup(popup_2524ecce50f9537a65480ae726f247e2)
+        ;
+
+        
+    
+    
+            marker_c9b72030dc0f8de40e4157b25c6a7c41.bindTooltip(
+                `<div>
+                     Pillauer Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e19da2f89b7d6e2201e2c597ff7d3ac = L.marker(
+                [49.0349543, 8.4411988],
+                {
+}
+            ).addTo(map_b6e7d91af9bf0559f06472e997dcfd40);
+        
+    
+        var popup_0dab4ca8f1c701cfe408a8f9856ae7c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cc7d66e2e60878eefaa7e9637a6319a = $(`<div id="html_0cc7d66e2e60878eefaa7e9637a6319a" style="width: 100.0%; height: 100.0%;">Schneidemühler Strasse</div>`)[0];
+                popup_0dab4ca8f1c701cfe408a8f9856ae7c1.setContent(html_0cc7d66e2e60878eefaa7e9637a6319a);
+            
+        
+
+        marker_3e19da2f89b7d6e2201e2c597ff7d3ac.bindPopup(popup_0dab4ca8f1c701cfe408a8f9856ae7c1)
+        ;
+
+        
+    
+    
+            marker_3e19da2f89b7d6e2201e2c597ff7d3ac.bindTooltip(
+                `<div>
+                     Schneidemühler Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f53f2054fff9e57fdb3ba5422034d5a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f53f2054fff9e57fdb3ba5422034d5a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f53f2054fff9e57fdb3ba5422034d5a0 = L.map(
+                "map_f53f2054fff9e57fdb3ba5422034d5a0",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79509ab7a2ae4aa91061998db2411349 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_79509ab7a2ae4aa91061998db2411349.addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+            var marker_ec3fd9a395bd93f0e3af8379be3ab199 = L.marker(
+                [49.0016164, 8.3969202],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_6fea327bbfa722b8d9cba2327b0d83a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aacffb161113e5df4d5bae83ebd4c9ed = $(`<div id="html_aacffb161113e5df4d5bae83ebd4c9ed" style="width: 100.0%; height: 100.0%;">Alter Brauhof</div>`)[0];
+                popup_6fea327bbfa722b8d9cba2327b0d83a2.setContent(html_aacffb161113e5df4d5bae83ebd4c9ed);
+            
+        
+
+        marker_ec3fd9a395bd93f0e3af8379be3ab199.bindPopup(popup_6fea327bbfa722b8d9cba2327b0d83a2)
+        ;
+
+        
+    
+    
+            marker_ec3fd9a395bd93f0e3af8379be3ab199.bindTooltip(
+                `<div>
+                     Alter Brauhof
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a7a453bb367b20023fb936716d421197 = L.marker(
+                [49.0035432, 8.3968155],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_645d4703f4e1b45ef39235dcd8c66df8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f0fc49d919524ee21e014900ff36efe = $(`<div id="html_9f0fc49d919524ee21e014900ff36efe" style="width: 100.0%; height: 100.0%;">August-Dürr-Strasse</div>`)[0];
+                popup_645d4703f4e1b45ef39235dcd8c66df8.setContent(html_9f0fc49d919524ee21e014900ff36efe);
+            
+        
+
+        marker_a7a453bb367b20023fb936716d421197.bindPopup(popup_645d4703f4e1b45ef39235dcd8c66df8)
+        ;
+
+        
+    
+    
+            marker_a7a453bb367b20023fb936716d421197.bindTooltip(
+                `<div>
+                     August-Dürr-Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a69ce60a3fac1bcd9020671b3797a4c = L.marker(
+                [49.0019253, 8.3924932],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_5f85f98ab53c453398654f6b70f8d1d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c123a32fbe94239fe874e2b51c4a6520 = $(`<div id="html_c123a32fbe94239fe874e2b51c4a6520" style="width: 100.0%; height: 100.0%;">Augustastrasse</div>`)[0];
+                popup_5f85f98ab53c453398654f6b70f8d1d1.setContent(html_c123a32fbe94239fe874e2b51c4a6520);
+            
+        
+
+        marker_5a69ce60a3fac1bcd9020671b3797a4c.bindPopup(popup_5f85f98ab53c453398654f6b70f8d1d1)
+        ;
+
+        
+    
+    
+            marker_5a69ce60a3fac1bcd9020671b3797a4c.bindTooltip(
+                `<div>
+                     Augustastrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6fbc68590b9414734151157d055825f = L.marker(
+                [48.9946363, 8.3964744],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_fdf3c5d494fc0fd779930320b54601fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1e1cd317183ffa6e961b779cecc5549 = $(`<div id="html_e1e1cd317183ffa6e961b779cecc5549" style="width: 100.0%; height: 100.0%;">Beiertheimer Allee</div>`)[0];
+                popup_fdf3c5d494fc0fd779930320b54601fc.setContent(html_e1e1cd317183ffa6e961b779cecc5549);
+            
+        
+
+        marker_a6fbc68590b9414734151157d055825f.bindPopup(popup_fdf3c5d494fc0fd779930320b54601fc)
+        ;
+
+        
+    
+    
+            marker_a6fbc68590b9414734151157d055825f.bindTooltip(
+                `<div>
+                     Beiertheimer Allee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95cd4e3f693fb1f0687ecefcb5a3c573 = L.marker(
+                [48.9946363, 8.3964744],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_8073f73d243c53dde044c94f9969c310 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59c3b3e0e7b2dfddbc41abafe73e3a25 = $(`<div id="html_59c3b3e0e7b2dfddbc41abafe73e3a25" style="width: 100.0%; height: 100.0%;">Beiertheimer Allee</div>`)[0];
+                popup_8073f73d243c53dde044c94f9969c310.setContent(html_59c3b3e0e7b2dfddbc41abafe73e3a25);
+            
+        
+
+        marker_95cd4e3f693fb1f0687ecefcb5a3c573.bindPopup(popup_8073f73d243c53dde044c94f9969c310)
+        ;
+
+        
+    
+    
+            marker_95cd4e3f693fb1f0687ecefcb5a3c573.bindTooltip(
+                `<div>
+                     Beiertheimer Allee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a3162e85fe68cb3f83ecfb15145b61a2 = L.marker(
+                [49.0027654, 8.401133265330182],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_92c42912042ab43f488aa3124a0395c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8275473e5314c62cb00430ced2b69286 = $(`<div id="html_8275473e5314c62cb00430ced2b69286" style="width: 100.0%; height: 100.0%;">Festplatz</div>`)[0];
+                popup_92c42912042ab43f488aa3124a0395c4.setContent(html_8275473e5314c62cb00430ced2b69286);
+            
+        
+
+        marker_a3162e85fe68cb3f83ecfb15145b61a2.bindPopup(popup_92c42912042ab43f488aa3124a0395c4)
+        ;
+
+        
+    
+    
+            marker_a3162e85fe68cb3f83ecfb15145b61a2.bindTooltip(
+                `<div>
+                     Festplatz
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c32ecf8c25867d521a38b4fe9d8acbf6 = L.marker(
+                [48.9976118, 8.3943381],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_a8ba42e95d15425f88056a13d38d399d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_795fbfe24ac4a4ebb257bdaa02363b4d = $(`<div id="html_795fbfe24ac4a4ebb257bdaa02363b4d" style="width: 100.0%; height: 100.0%;">Kantstrasse</div>`)[0];
+                popup_a8ba42e95d15425f88056a13d38d399d.setContent(html_795fbfe24ac4a4ebb257bdaa02363b4d);
+            
+        
+
+        marker_c32ecf8c25867d521a38b4fe9d8acbf6.bindPopup(popup_a8ba42e95d15425f88056a13d38d399d)
+        ;
+
+        
+    
+    
+            marker_c32ecf8c25867d521a38b4fe9d8acbf6.bindTooltip(
+                `<div>
+                     Kantstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_477435e96bac2cde909ba279e3bbc62c = L.marker(
+                [49.0026121, 8.3943663],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_816747f5040999c66eabc753dce19e6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa0ecb56f6150f4968dc1995c352c40a = $(`<div id="html_fa0ecb56f6150f4968dc1995c352c40a" style="width: 100.0%; height: 100.0%;">Mathystrasse</div>`)[0];
+                popup_816747f5040999c66eabc753dce19e6b.setContent(html_fa0ecb56f6150f4968dc1995c352c40a);
+            
+        
+
+        marker_477435e96bac2cde909ba279e3bbc62c.bindPopup(popup_816747f5040999c66eabc753dce19e6b)
+        ;
+
+        
+    
+    
+            marker_477435e96bac2cde909ba279e3bbc62c.bindTooltip(
+                `<div>
+                     Mathystrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d99b1840d53c1c19246b7d1dd3e98fd5 = L.marker(
+                [49.0035477, 8.3965304],
+                {
+}
+            ).addTo(map_f53f2054fff9e57fdb3ba5422034d5a0);
+        
+    
+        var popup_b658081b78298a6bf1fb7b071d99c320 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fb7f8f575fd81351501577ee124a659 = $(`<div id="html_6fb7f8f575fd81351501577ee124a659" style="width: 100.0%; height: 100.0%;">Renckstrasse</div>`)[0];
+                popup_b658081b78298a6bf1fb7b071d99c320.setContent(html_6fb7f8f575fd81351501577ee124a659);
+            
+        
+
+        marker_d99b1840d53c1c19246b7d1dd3e98fd5.bindPopup(popup_b658081b78298a6bf1fb7b071d99c320)
+        ;
+
+        
+    
+    
+            marker_d99b1840d53c1c19246b7d1dd3e98fd5.bindTooltip(
+                `<div>
+                     Renckstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

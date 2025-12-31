@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_84d1924efd875ab7d6a6e9acee7e6a35 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_84d1924efd875ab7d6a6e9acee7e6a35" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_84d1924efd875ab7d6a6e9acee7e6a35 = L.map(
+                "map_84d1924efd875ab7d6a6e9acee7e6a35",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5bfc1bc214568987cd1c64637a580fed = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5bfc1bc214568987cd1c64637a580fed.addTo(map_84d1924efd875ab7d6a6e9acee7e6a35);
+        
+    
+            var marker_04ddfcb43c79f27527354cbfe37e04bd = L.marker(
+                [49.0083771, 8.414685],
+                {
+}
+            ).addTo(map_84d1924efd875ab7d6a6e9acee7e6a35);
+        
+    
+        var popup_70fe06e88bad540987e90214c6e28480 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_318efce92ed1d8aa9607f9ed849b1890 = $(`<div id="html_318efce92ed1d8aa9607f9ed849b1890" style="width: 100.0%; height: 100.0%;">Am Künstlerhaus</div>`)[0];
+                popup_70fe06e88bad540987e90214c6e28480.setContent(html_318efce92ed1d8aa9607f9ed849b1890);
+            
+        
+
+        marker_04ddfcb43c79f27527354cbfe37e04bd.bindPopup(popup_70fe06e88bad540987e90214c6e28480)
+        ;
+
+        
+    
+    
+            marker_04ddfcb43c79f27527354cbfe37e04bd.bindTooltip(
+                `<div>
+                     Am Künstlerhaus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7031a1a4b5fe7dbaed924b0a2108a768 = L.marker(
+                [49.0084725, 8.4151733],
+                {
+}
+            ).addTo(map_84d1924efd875ab7d6a6e9acee7e6a35);
+        
+    
+        var popup_d040992baf6c603101facd49235cddbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03575a04bfbe4450b9f7a5db1aa19b37 = $(`<div id="html_03575a04bfbe4450b9f7a5db1aa19b37" style="width: 100.0%; height: 100.0%;">Brunnenstrasse</div>`)[0];
+                popup_d040992baf6c603101facd49235cddbc.setContent(html_03575a04bfbe4450b9f7a5db1aa19b37);
+            
+        
+
+        marker_7031a1a4b5fe7dbaed924b0a2108a768.bindPopup(popup_d040992baf6c603101facd49235cddbc)
+        ;
+
+        
+    
+    
+            marker_7031a1a4b5fe7dbaed924b0a2108a768.bindTooltip(
+                `<div>
+                     Brunnenstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_64fa02c7bca0a58b562153535b41dec2 = L.marker(
+                [49.0090407, 8.415542],
+                {
+}
+            ).addTo(map_84d1924efd875ab7d6a6e9acee7e6a35);
+        
+    
+        var popup_744827215de1f2055dd2fc5378b7749d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d981c935116f5f6275a661f995821d18 = $(`<div id="html_d981c935116f5f6275a661f995821d18" style="width: 100.0%; height: 100.0%;">Kaiserstrasse</div>`)[0];
+                popup_744827215de1f2055dd2fc5378b7749d.setContent(html_d981c935116f5f6275a661f995821d18);
+            
+        
+
+        marker_64fa02c7bca0a58b562153535b41dec2.bindPopup(popup_744827215de1f2055dd2fc5378b7749d)
+        ;
+
+        
+    
+    
+            marker_64fa02c7bca0a58b562153535b41dec2.bindTooltip(
+                `<div>
+                     Kaiserstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a5e9a2bb34082dd81ae360e4d8ee839 = L.marker(
+                [49.0088416, 8.4167687],
+                {
+}
+            ).addTo(map_84d1924efd875ab7d6a6e9acee7e6a35);
+        
+    
+        var popup_41694f02946479191ea8011d82ce62f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f1a438bd8a37c7a42cb415fc63adb55 = $(`<div id="html_2f1a438bd8a37c7a42cb415fc63adb55" style="width: 100.0%; height: 100.0%;">Kapellenstrasse</div>`)[0];
+                popup_41694f02946479191ea8011d82ce62f4.setContent(html_2f1a438bd8a37c7a42cb415fc63adb55);
+            
+        
+
+        marker_7a5e9a2bb34082dd81ae360e4d8ee839.bindPopup(popup_41694f02946479191ea8011d82ce62f4)
+        ;
+
+        
+    
+    
+            marker_7a5e9a2bb34082dd81ae360e4d8ee839.bindTooltip(
+                `<div>
+                     Kapellenstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

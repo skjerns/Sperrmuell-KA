@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7780e7e97305991a85f732560862063 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d7780e7e97305991a85f732560862063" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7780e7e97305991a85f732560862063 = L.map(
+                "map_d7780e7e97305991a85f732560862063",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ac9e2a36ed4a18e9ba074cef18c8ac9d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ac9e2a36ed4a18e9ba074cef18c8ac9d.addTo(map_d7780e7e97305991a85f732560862063);
+        
+    
+            var marker_ee6a1fdd475be4808bf2514f945b7203 = L.marker(
+                [49.0149972, 8.3532907],
+                {
+}
+            ).addTo(map_d7780e7e97305991a85f732560862063);
+        
+    
+        var popup_6c1dac41a40aea3947c586f73ae2cacd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cce9bad8f7332000417a2855e6f53234 = $(`<div id="html_cce9bad8f7332000417a2855e6f53234" style="width: 100.0%; height: 100.0%;">An der Rainmühle</div>`)[0];
+                popup_6c1dac41a40aea3947c586f73ae2cacd.setContent(html_cce9bad8f7332000417a2855e6f53234);
+            
+        
+
+        marker_ee6a1fdd475be4808bf2514f945b7203.bindPopup(popup_6c1dac41a40aea3947c586f73ae2cacd)
+        ;
+
+        
+    
+    
+            marker_ee6a1fdd475be4808bf2514f945b7203.bindTooltip(
+                `<div>
+                     An der Rainmühle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7748e80a60b052b4da79437fec36602 = L.marker(
+                [49.0125211, 8.3569259],
+                {
+}
+            ).addTo(map_d7780e7e97305991a85f732560862063);
+        
+    
+        var popup_6a6bd87daca546a598fd297b46bba5e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8562064a52daa10383e6669136547ee = $(`<div id="html_d8562064a52daa10383e6669136547ee" style="width: 100.0%; height: 100.0%;">Fabrikstrasse</div>`)[0];
+                popup_6a6bd87daca546a598fd297b46bba5e8.setContent(html_d8562064a52daa10383e6669136547ee);
+            
+        
+
+        marker_d7748e80a60b052b4da79437fec36602.bindPopup(popup_6a6bd87daca546a598fd297b46bba5e8)
+        ;
+
+        
+    
+    
+            marker_d7748e80a60b052b4da79437fec36602.bindTooltip(
+                `<div>
+                     Fabrikstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a53b6e5963a9e84e6b83027d7398948 = L.marker(
+                [49.0113126, 8.3571663],
+                {
+}
+            ).addTo(map_d7780e7e97305991a85f732560862063);
+        
+    
+        var popup_b0a4edca846dd254ac91cfcb6a1fd67a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa78e4a1e12c6565ba196bf4e0d17dbe = $(`<div id="html_aa78e4a1e12c6565ba196bf4e0d17dbe" style="width: 100.0%; height: 100.0%;">Lameystrasse</div>`)[0];
+                popup_b0a4edca846dd254ac91cfcb6a1fd67a.setContent(html_aa78e4a1e12c6565ba196bf4e0d17dbe);
+            
+        
+
+        marker_4a53b6e5963a9e84e6b83027d7398948.bindPopup(popup_b0a4edca846dd254ac91cfcb6a1fd67a)
+        ;
+
+        
+    
+    
+            marker_4a53b6e5963a9e84e6b83027d7398948.bindTooltip(
+                `<div>
+                     Lameystrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae2bc87d3aceb6a8777fe8f7452f9867 = L.marker(
+                [49.0189175, 8.3521159],
+                {
+}
+            ).addTo(map_d7780e7e97305991a85f732560862063);
+        
+    
+        var popup_07f0b72e5ccc3ba14862caeca5288f27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a687f5cf1128e0cbb28e15524fd92fca = $(`<div id="html_a687f5cf1128e0cbb28e15524fd92fca" style="width: 100.0%; height: 100.0%;">Rheinstrasse</div>`)[0];
+                popup_07f0b72e5ccc3ba14862caeca5288f27.setContent(html_a687f5cf1128e0cbb28e15524fd92fca);
+            
+        
+
+        marker_ae2bc87d3aceb6a8777fe8f7452f9867.bindPopup(popup_07f0b72e5ccc3ba14862caeca5288f27)
+        ;
+
+        
+    
+    
+            marker_ae2bc87d3aceb6a8777fe8f7452f9867.bindTooltip(
+                `<div>
+                     Rheinstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

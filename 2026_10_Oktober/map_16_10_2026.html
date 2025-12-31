@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7314434038ddba6a48f38bfc76e79761 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7314434038ddba6a48f38bfc76e79761" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7314434038ddba6a48f38bfc76e79761 = L.map(
+                "map_7314434038ddba6a48f38bfc76e79761",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b80e2d810d05bfed4feed52337cdeacd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b80e2d810d05bfed4feed52337cdeacd.addTo(map_7314434038ddba6a48f38bfc76e79761);
+        
+    
+            var marker_b99bc2a51de9c37fcdb1d8f4e77cdecc = L.marker(
+                [48.9929763, 8.3319408],
+                {
+}
+            ).addTo(map_7314434038ddba6a48f38bfc76e79761);
+        
+    
+        var popup_e9183378802ad15653850fbf0e3daa98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d4b6dae2167341ebb9f1f6758af9836 = $(`<div id="html_8d4b6dae2167341ebb9f1f6758af9836" style="width: 100.0%; height: 100.0%;">Bäumlesäcker</div>`)[0];
+                popup_e9183378802ad15653850fbf0e3daa98.setContent(html_8d4b6dae2167341ebb9f1f6758af9836);
+            
+        
+
+        marker_b99bc2a51de9c37fcdb1d8f4e77cdecc.bindPopup(popup_e9183378802ad15653850fbf0e3daa98)
+        ;
+
+        
+    
+    
+            marker_b99bc2a51de9c37fcdb1d8f4e77cdecc.bindTooltip(
+                `<div>
+                     Bäumlesäcker
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac14d558e5938ea59f84af74f36c80bc = L.marker(
+                [48.9939831, 8.333981],
+                {
+}
+            ).addTo(map_7314434038ddba6a48f38bfc76e79761);
+        
+    
+        var popup_757ad5b27af875efc10e515a8b022186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e901636a8394c9b2b6af85f36315234 = $(`<div id="html_3e901636a8394c9b2b6af85f36315234" style="width: 100.0%; height: 100.0%;">Dornröschenweg</div>`)[0];
+                popup_757ad5b27af875efc10e515a8b022186.setContent(html_3e901636a8394c9b2b6af85f36315234);
+            
+        
+
+        marker_ac14d558e5938ea59f84af74f36c80bc.bindPopup(popup_757ad5b27af875efc10e515a8b022186)
+        ;
+
+        
+    
+    
+            marker_ac14d558e5938ea59f84af74f36c80bc.bindTooltip(
+                `<div>
+                     Dornröschenweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cc9edda761152926e96e7376b3f3f7ae = L.marker(
+                [48.989062, 8.3311272],
+                {
+}
+            ).addTo(map_7314434038ddba6a48f38bfc76e79761);
+        
+    
+        var popup_3c75838decec7c5f9b4234a89db2053b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a0764ac8ff13266df3871ebdabacdac = $(`<div id="html_1a0764ac8ff13266df3871ebdabacdac" style="width: 100.0%; height: 100.0%;">Nussbaumweg</div>`)[0];
+                popup_3c75838decec7c5f9b4234a89db2053b.setContent(html_1a0764ac8ff13266df3871ebdabacdac);
+            
+        
+
+        marker_cc9edda761152926e96e7376b3f3f7ae.bindPopup(popup_3c75838decec7c5f9b4234a89db2053b)
+        ;
+
+        
+    
+    
+            marker_cc9edda761152926e96e7376b3f3f7ae.bindTooltip(
+                `<div>
+                     Nussbaumweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3096c3b5331731ae63cb7cfb232ecd06 = L.marker(
+                [48.9998103, 8.3327552],
+                {
+}
+            ).addTo(map_7314434038ddba6a48f38bfc76e79761);
+        
+    
+        var popup_292d499f17a2addcce8064c9c852ed5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dca01ed84b7805d35c16df76758b59b = $(`<div id="html_3dca01ed84b7805d35c16df76758b59b" style="width: 100.0%; height: 100.0%;">Rheinstrandallee</div>`)[0];
+                popup_292d499f17a2addcce8064c9c852ed5e.setContent(html_3dca01ed84b7805d35c16df76758b59b);
+            
+        
+
+        marker_3096c3b5331731ae63cb7cfb232ecd06.bindPopup(popup_292d499f17a2addcce8064c9c852ed5e)
+        ;
+
+        
+    
+    
+            marker_3096c3b5331731ae63cb7cfb232ecd06.bindTooltip(
+                `<div>
+                     Rheinstrandallee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_44a15d66b8d97a0de6d9a7286678f840 = L.marker(
+                [48.9929264, 8.3329608],
+                {
+}
+            ).addTo(map_7314434038ddba6a48f38bfc76e79761);
+        
+    
+        var popup_551c26eaa3e4f5bc463a581a345a7109 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2ee77fa67bff91c49842d5bc3403d0e = $(`<div id="html_c2ee77fa67bff91c49842d5bc3403d0e" style="width: 100.0%; height: 100.0%;">Steinäckerstrasse</div>`)[0];
+                popup_551c26eaa3e4f5bc463a581a345a7109.setContent(html_c2ee77fa67bff91c49842d5bc3403d0e);
+            
+        
+
+        marker_44a15d66b8d97a0de6d9a7286678f840.bindPopup(popup_551c26eaa3e4f5bc463a581a345a7109)
+        ;
+
+        
+    
+    
+            marker_44a15d66b8d97a0de6d9a7286678f840.bindTooltip(
+                `<div>
+                     Steinäckerstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

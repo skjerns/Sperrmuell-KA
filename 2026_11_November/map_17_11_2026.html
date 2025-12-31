@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8de94b7d6461ce08db70d13bf5838b8d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8de94b7d6461ce08db70d13bf5838b8d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8de94b7d6461ce08db70d13bf5838b8d = L.map(
+                "map_8de94b7d6461ce08db70d13bf5838b8d",
+                {
+                    center: [49.0068705, 8.4034195],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12.5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e57786dec6235ad67f04ba71727d6458 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e57786dec6235ad67f04ba71727d6458.addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+            var marker_e05c15480120fcba608fad5cc7fa4fe7 = L.marker(
+                [48.9806983, 8.4044253],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_94919a2f637d25ed83cd3415c45ee654 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_366a835fcdb0a593880f252036f092a2 = $(`<div id="html_366a835fcdb0a593880f252036f092a2" style="width: 100.0%; height: 100.0%;">Am Rüppurrer Schloss</div>`)[0];
+                popup_94919a2f637d25ed83cd3415c45ee654.setContent(html_366a835fcdb0a593880f252036f092a2);
+            
+        
+
+        marker_e05c15480120fcba608fad5cc7fa4fe7.bindPopup(popup_94919a2f637d25ed83cd3415c45ee654)
+        ;
+
+        
+    
+    
+            marker_e05c15480120fcba608fad5cc7fa4fe7.bindTooltip(
+                `<div>
+                     Am Rüppurrer Schloss
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a59ab753c29af652ada9e4b501844a2 = L.marker(
+                [48.9824913, 8.4086129],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_970f65785d0ed9df138b786469c4b4db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61762c34e97bff3aec290dfbda4654df = $(`<div id="html_61762c34e97bff3aec290dfbda4654df" style="width: 100.0%; height: 100.0%;">Erlenweg</div>`)[0];
+                popup_970f65785d0ed9df138b786469c4b4db.setContent(html_61762c34e97bff3aec290dfbda4654df);
+            
+        
+
+        marker_1a59ab753c29af652ada9e4b501844a2.bindPopup(popup_970f65785d0ed9df138b786469c4b4db)
+        ;
+
+        
+    
+    
+            marker_1a59ab753c29af652ada9e4b501844a2.bindTooltip(
+                `<div>
+                     Erlenweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee2cc802d6bdeb413eb67f93b8a04be1 = L.marker(
+                [48.985538, 8.4037431],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_423b49dd70ce675b2a56b762e9114efa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8526e9f4d9f8f895c3d8d94305580222 = $(`<div id="html_8526e9f4d9f8f895c3d8d94305580222" style="width: 100.0%; height: 100.0%;">Ettlinger Allee</div>`)[0];
+                popup_423b49dd70ce675b2a56b762e9114efa.setContent(html_8526e9f4d9f8f895c3d8d94305580222);
+            
+        
+
+        marker_ee2cc802d6bdeb413eb67f93b8a04be1.bindPopup(popup_423b49dd70ce675b2a56b762e9114efa)
+        ;
+
+        
+    
+    
+            marker_ee2cc802d6bdeb413eb67f93b8a04be1.bindTooltip(
+                `<div>
+                     Ettlinger Allee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a4ff1c55b650304cc43e1db8a4a6ac9d = L.marker(
+                [48.976338, 8.3932331],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_9d5c09f82f7bdd1fbcf1580f5172adfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7df6bda7fd127a5880e946d4bf69f49e = $(`<div id="html_7df6bda7fd127a5880e946d4bf69f49e" style="width: 100.0%; height: 100.0%;">Försterpfad</div>`)[0];
+                popup_9d5c09f82f7bdd1fbcf1580f5172adfd.setContent(html_7df6bda7fd127a5880e946d4bf69f49e);
+            
+        
+
+        marker_a4ff1c55b650304cc43e1db8a4a6ac9d.bindPopup(popup_9d5c09f82f7bdd1fbcf1580f5172adfd)
+        ;
+
+        
+    
+    
+            marker_a4ff1c55b650304cc43e1db8a4a6ac9d.bindTooltip(
+                `<div>
+                     Försterpfad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1eb7cc15f4e5f5159f98395e3e8052fb = L.marker(
+                [48.9769839, 8.3940551],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_4a11570af5cb65feb3f8507a613f85d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a699062946a7864004f14947ca13b6fd = $(`<div id="html_a699062946a7864004f14947ca13b6fd" style="width: 100.0%; height: 100.0%;">Gottlob-Schreber-Weg</div>`)[0];
+                popup_4a11570af5cb65feb3f8507a613f85d5.setContent(html_a699062946a7864004f14947ca13b6fd);
+            
+        
+
+        marker_1eb7cc15f4e5f5159f98395e3e8052fb.bindPopup(popup_4a11570af5cb65feb3f8507a613f85d5)
+        ;
+
+        
+    
+    
+            marker_1eb7cc15f4e5f5159f98395e3e8052fb.bindTooltip(
+                `<div>
+                     Gottlob-Schreber-Weg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dbaea525911c439e59e984149988732c = L.marker(
+                [48.974789, 8.4049675],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_fb8e77c1f0d43ce0c4baff0bd8130f67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f6440422d3a7818cd2c2f902fd49d02 = $(`<div id="html_8f6440422d3a7818cd2c2f902fd49d02" style="width: 100.0%; height: 100.0%;">Hedwigstrasse</div>`)[0];
+                popup_fb8e77c1f0d43ce0c4baff0bd8130f67.setContent(html_8f6440422d3a7818cd2c2f902fd49d02);
+            
+        
+
+        marker_dbaea525911c439e59e984149988732c.bindPopup(popup_fb8e77c1f0d43ce0c4baff0bd8130f67)
+        ;
+
+        
+    
+    
+            marker_dbaea525911c439e59e984149988732c.bindTooltip(
+                `<div>
+                     Hedwigstrasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55eaa1e9c09541556b00912d5bdecea5 = L.marker(
+                [48.972577, 8.4048876],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_630799e2992634b7d3387838dd70f5fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fadcdef500cef613f8ef804812fd682 = $(`<div id="html_1fadcdef500cef613f8ef804812fd682" style="width: 100.0%; height: 100.0%;">Herrenalber Strasse</div>`)[0];
+                popup_630799e2992634b7d3387838dd70f5fc.setContent(html_1fadcdef500cef613f8ef804812fd682);
+            
+        
+
+        marker_55eaa1e9c09541556b00912d5bdecea5.bindPopup(popup_630799e2992634b7d3387838dd70f5fc)
+        ;
+
+        
+    
+    
+            marker_55eaa1e9c09541556b00912d5bdecea5.bindTooltip(
+                `<div>
+                     Herrenalber Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4dcd5e549d049ee9561eb09fbca00bcc = L.marker(
+                [48.974031, 8.4043446],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_50fb31f7d99062bd021f270c615fc2cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b5598f90ecc6846f2fba0df972098ab = $(`<div id="html_8b5598f90ecc6846f2fba0df972098ab" style="width: 100.0%; height: 100.0%;">Rastatter Strasse</div>`)[0];
+                popup_50fb31f7d99062bd021f270c615fc2cb.setContent(html_8b5598f90ecc6846f2fba0df972098ab);
+            
+        
+
+        marker_4dcd5e549d049ee9561eb09fbca00bcc.bindPopup(popup_50fb31f7d99062bd021f270c615fc2cb)
+        ;
+
+        
+    
+    
+            marker_4dcd5e549d049ee9561eb09fbca00bcc.bindTooltip(
+                `<div>
+                     Rastatter Strasse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_73c8b163bfce1585c17b290c1b37de52 = L.marker(
+                [48.9799551, 8.3940466],
+                {
+}
+            ).addTo(map_8de94b7d6461ce08db70d13bf5838b8d);
+        
+    
+        var popup_2e8552b6b8371437395c38523d0a53ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8f4daa6120e29415d4a361e92decca6 = $(`<div id="html_a8f4daa6120e29415d4a361e92decca6" style="width: 100.0%; height: 100.0%;">Scheibenhardter Weg</div>`)[0];
+                popup_2e8552b6b8371437395c38523d0a53ea.setContent(html_a8f4daa6120e29415d4a361e92decca6);
+            
+        
+
+        marker_73c8b163bfce1585c17b290c1b37de52.bindPopup(popup_2e8552b6b8371437395c38523d0a53ea)
+        ;
+
+        
+    
+    
+            marker_73c8b163bfce1585c17b290c1b37de52.bindTooltip(
+                `<div>
+                     Scheibenhardter Weg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
